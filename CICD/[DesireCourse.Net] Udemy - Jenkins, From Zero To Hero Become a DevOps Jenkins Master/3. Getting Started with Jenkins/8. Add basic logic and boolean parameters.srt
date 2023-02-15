@@ -1,0 +1,455 @@
+1
+00:00:00,570 --> 00:00:05,660
+Hello and welcome back in this video we're going to make things harder.
+
+2
+00:00:05,760 --> 00:00:10,260
+I mean now we're going to apply a little bit of logic to on the script.
+
+3
+00:00:10,290 --> 00:00:13,020
+So we're going to have conditions.
+
+4
+00:00:13,080 --> 00:00:19,380
+So the first thing that we're going to do is that we're going to if you're in the container Let's go
+
+5
+00:00:19,380 --> 00:00:24,090
+out of the container and let's keep modifying this crib that we created before.
+
+6
+00:00:24,360 --> 00:00:32,340
+So here we're going to add a third pedometer which is going to be like show and then the thing is that
+
+7
+00:00:32,350 --> 00:00:35,170
+these pedometer it's going to be a boolean value.
+
+8
+00:00:35,340 --> 00:00:37,500
+So it could be true or false.
+
+9
+00:00:37,650 --> 00:00:45,030
+And then we're going to say if this parameter is true then you are going to print the name and the last
+
+10
+00:00:45,030 --> 00:00:46,290
+name for that person.
+
+11
+00:00:46,290 --> 00:00:47,590
+Let me show you here.
+
+12
+00:00:47,910 --> 00:00:57,750
+If we go ahead and configure our JOP and we add a new parameter which is going to be boolean parameter
+
+13
+00:00:57,870 --> 00:01:01,220
+you can see that this is going to ask you for a name.
+
+14
+00:01:01,230 --> 00:01:03,420
+So we're going to name a shoe.
+
+15
+00:01:03,630 --> 00:01:10,460
+And the default value if we mark this it's going to be true if we don't mark this it's going to be false.
+
+16
+00:01:10,470 --> 00:01:11,070
+Right.
+
+17
+00:01:11,070 --> 00:01:12,640
+So this is what we're doing here.
+
+18
+00:01:12,660 --> 00:01:16,090
+We're saying show it's going to be Vishu.
+
+19
+00:01:16,260 --> 00:01:21,180
+These parameter that we are passing here we're going to delete this second name here.
+
+20
+00:01:21,300 --> 00:01:24,280
+We're only going to use three parameters Ferdie's BDO.
+
+21
+00:01:24,380 --> 00:01:30,420
+We're going to use the first name of the person the last name which is a list and then the show parameter
+
+22
+00:01:30,480 --> 00:01:32,490
+which is a Boolean parameter.
+
+23
+00:01:32,490 --> 00:01:39,020
+So OK we have here the name remembered Remember we already know how to pass parameters to on a script.
+
+24
+00:01:39,030 --> 00:01:44,050
+So in this case as Loizzo before this is going to be the first parameter second parameter and third
+
+25
+00:01:44,100 --> 00:01:44,930
+pedometer.
+
+26
+00:01:45,000 --> 00:01:51,930
+So we're going to apply a little bit of logic here and we're going to say f the variable show.
+
+27
+00:01:52,260 --> 00:01:58,230
+So we say like this equals two I'm just going to put it in zero on the string.
+
+28
+00:01:58,230 --> 00:02:00,260
+I don't remember how that comes from Jenkins.
+
+29
+00:02:00,270 --> 00:02:06,110
+Let's design a string and then let's say Van echo Hello.
+
+30
+00:02:06,180 --> 00:02:06,960
+Name a last name.
+
+31
+00:02:06,960 --> 00:02:09,080
+So what are we doing here.
+
+32
+00:02:09,180 --> 00:02:15,980
+We are as kin if the verbal issue which is the third parameter is equal to true.
+
+33
+00:02:16,290 --> 00:02:20,370
+Then we are going to print the name and the last name.
+
+34
+00:02:20,370 --> 00:02:26,970
+But what happens if this condition doesn't meet then we do our nails here and we are going to print
+
+35
+00:02:27,000 --> 00:02:27,700
+never.
+
+36
+00:02:27,750 --> 00:02:34,470
+So we're going to say something like If you want to see the name then the
+
+37
+00:02:38,460 --> 00:02:44,440
+PLEASE CHOOSE THE SHOW option please.
+
+38
+00:02:44,750 --> 00:02:45,830
+Let's see.
+
+39
+00:02:45,860 --> 00:02:47,560
+Please Mark.
+
+40
+00:02:47,580 --> 00:02:48,120
+Sure.
+
+41
+00:02:48,200 --> 00:02:49,090
+Option.
+
+42
+00:02:49,310 --> 00:02:50,280
+Ok cool.
+
+43
+00:02:50,360 --> 00:02:52,200
+And then we close the F here.
+
+44
+00:02:52,460 --> 00:02:53,110
+Nice.
+
+45
+00:02:53,120 --> 00:02:57,440
+So if we now execute these scrape What do you think that is going to happen.
+
+46
+00:02:57,560 --> 00:03:03,260
+Well the first thing that is going to happen is that these guys strainers if you want to say the name
+
+47
+00:03:03,260 --> 00:03:06,710
+please mark the show option but we don't have any.
+
+48
+00:03:06,710 --> 00:03:11,570
+Show up here but don't worry because this is is going to be executed from Jenkins.
+
+49
+00:03:11,600 --> 00:03:20,300
+So what happens if we pass here and name him and if we pass the last name and if we pass falls this
+
+50
+00:03:20,300 --> 00:03:23,430
+is we're going to see if you want to see the name please mark to show option.
+
+51
+00:03:23,450 --> 00:03:25,820
+Ok but what happens if we pass here.
+
+52
+00:03:25,820 --> 00:03:26,600
+True.
+
+53
+00:03:26,900 --> 00:03:32,750
+What you see is that now this creep is printing the name because the condition is been met.
+
+54
+00:03:32,870 --> 00:03:38,160
+And in this case the third parameter that show parameter is true.
+
+55
+00:03:38,570 --> 00:03:43,190
+So let me show you this creep once again and this is our logic.
+
+56
+00:03:43,220 --> 00:03:50,300
+So remember that here in Jenkin's we have just created at parameter within name of show which is going
+
+57
+00:03:50,300 --> 00:03:56,300
+to be the third parameter for our script and the default value for this case is going to be true because
+
+58
+00:03:56,300 --> 00:04:00,640
+we mark this if we just uncheck this and it's going to become.
+
+59
+00:04:00,660 --> 00:04:02,090
+So let's keep it like true.
+
+60
+00:04:02,510 --> 00:04:06,020
+And now the hours crib is working good.
+
+61
+00:04:06,020 --> 00:04:11,720
+We're going to copy this script to our container remember that we're outside of the containers so let's
+
+62
+00:04:11,720 --> 00:04:15,150
+keep this to the same location as before.
+
+63
+00:04:15,350 --> 00:04:21,960
+So if you hit CON-TROLL and the key are at the same time you're going to have something like filtering
+
+64
+00:04:22,010 --> 00:04:23,520
+here for searching.
+
+65
+00:04:23,750 --> 00:04:29,980
+Then you can type like C.P and you're going to have one command related to your input.
+
+66
+00:04:29,990 --> 00:04:37,010
+So in this case we want to do this again copy descript that we created or that we modify to the Jenkin's
+
+67
+00:04:37,010 --> 00:04:39,470
+container in this path.
+
+68
+00:04:39,620 --> 00:04:41,510
+So let's copy this.
+
+69
+00:04:41,510 --> 00:04:46,390
+Let's go ahead and exec into the container and let's look for a temp script.
+
+70
+00:04:46,610 --> 00:04:50,720
+And as you can see all our modifications are in place.
+
+71
+00:04:50,720 --> 00:04:59,600
+So cool let's go ahead and then let's see how the execution would look like we're in it to execute these
+
+72
+00:04:59,620 --> 00:05:05,410
+full path then pass one parameter to parameters and three parameters.
+
+73
+00:05:05,480 --> 00:05:11,970
+Q If we don't pass the third parameter or if we proceed as false then it's not going to show it nice.
+
+74
+00:05:11,980 --> 00:05:17,410
+So we're going to do this we're going to copy these thing here and we're going to pay this in artwork
+
+75
+00:05:17,470 --> 00:05:18,370
+shell.
+
+76
+00:05:18,400 --> 00:05:21,130
+So this is our script then.
+
+77
+00:05:21,190 --> 00:05:23,230
+This is not going to be my name.
+
+78
+00:05:23,230 --> 00:05:30,410
+This is going to refer to the name of the first parameter which is named know it's first name.
+
+79
+00:05:30,510 --> 00:05:33,730
+The first parameter that is coming from Jenkyns.
+
+80
+00:05:33,750 --> 00:05:41,580
+So let's say learn sign first name and then this is going to be the last name the name of the parameter
+
+81
+00:05:41,580 --> 00:05:47,140
+remembers or we're going to choose this and we're going to pay is using here.
+
+82
+00:05:47,360 --> 00:05:52,540
+And then these falls is going to be nothing else but this show pedometer.
+
+83
+00:05:52,550 --> 00:05:56,370
+So we go here do a lot of science and show.
+
+84
+00:05:56,750 --> 00:06:02,030
+So remember this is the first parameter that we're defining and not on our script.
+
+85
+00:06:02,030 --> 00:06:08,140
+If we do a cat tamps script you're going to see that name for its parameter last name second parameter
+
+86
+00:06:08,210 --> 00:06:12,100
+and show third parameter first second and third.
+
+87
+00:06:12,110 --> 00:06:13,050
+It's pretty cool.
+
+88
+00:06:13,200 --> 00:06:17,810
+OK so now we click on the safe that we can build with parameters.
+
+89
+00:06:17,810 --> 00:06:24,950
+So as you can see now we have the first name which is a string parameter and we can call it like John.
+
+90
+00:06:25,130 --> 00:06:30,640
+And then we have the last name that we can say do for example from the list.
+
+91
+00:06:30,740 --> 00:06:37,370
+And then we have this show so remember when you mark this this is going to be true when you don't mark
+
+92
+00:06:37,370 --> 00:06:39,130
+this this is going to be.
+
+93
+00:06:39,230 --> 00:06:43,600
+So in this case let's keep it like folds and let's hit the Beeld button.
+
+94
+00:06:44,460 --> 00:06:49,840
+And once the execution finishes you're going to go to the number console output.
+
+95
+00:06:50,040 --> 00:06:55,260
+And then you are going to see the error here which says if you want to see the name please mark the
+
+96
+00:06:55,260 --> 00:06:56,180
+show option.
+
+97
+00:06:56,370 --> 00:06:57,270
+OK.
+
+98
+00:06:57,270 --> 00:06:59,340
+So we're going to execute it back.
+
+99
+00:06:59,370 --> 00:07:02,000
+We're going to mark this show option.
+
+100
+00:07:02,060 --> 00:07:05,870
+We're going to choose a random last name from here.
+
+101
+00:07:06,000 --> 00:07:13,770
+Click on the build button and once the execution finishes we can go to the number console output and
+
+102
+00:07:13,800 --> 00:07:17,120
+Magique you have here your output.
+
+103
+00:07:17,250 --> 00:07:20,020
+Hello your name and your last name.
+
+104
+00:07:20,100 --> 00:07:24,280
+So remember that everything has been handled by this crypt.
+
+105
+00:07:24,330 --> 00:07:30,720
+The only one thing that Jenkins is doing is providing Debelle used to populate this information and
+
+106
+00:07:30,720 --> 00:07:36,390
+then based on the logic that we've viewed here then Jenkins is going to display whatever we want to
+
+107
+00:07:36,390 --> 00:07:37,290
+beat his play.
+
+108
+00:07:37,290 --> 00:07:38,600
+So this is pretty cool.
+
+109
+00:07:38,610 --> 00:07:44,200
+You already know how to create some parameters like strappings lists booleans.
+
+110
+00:07:44,220 --> 00:07:47,500
+Now you know how to integrate all of those parameters.
+
+111
+00:07:47,550 --> 00:07:54,630
+Now you know how to create a script and include those parameters so you can retrieve the value from
+
+112
+00:07:54,660 --> 00:07:58,040
+Jenkin and then pass those values to your script.
+
+113
+00:07:58,170 --> 00:07:59,990
+That is pretty cool for now.
+
+114
+00:08:00,090 --> 00:08:02,310
+So see you in the next lesson.

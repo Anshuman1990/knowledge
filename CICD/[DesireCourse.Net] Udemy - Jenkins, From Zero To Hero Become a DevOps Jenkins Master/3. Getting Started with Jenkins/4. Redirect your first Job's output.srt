@@ -1,0 +1,315 @@
+1
+00:00:00,710 --> 00:00:07,220
+Hello and welcome back in this video we're going to learn how to redirect output in Jenkyns.
+
+2
+00:00:07,490 --> 00:00:14,180
+So in bash remember that you are going to be working with bash because in the job definition if we go
+
+3
+00:00:14,230 --> 00:00:20,190
+to configure what do you find as shell so shell is exactly the same thing that you are.
+
+4
+00:00:20,190 --> 00:00:21,790
+BASH command please.
+
+5
+00:00:21,800 --> 00:00:24,440
+Again remember that we are within the container.
+
+6
+00:00:24,680 --> 00:00:30,370
+So if you are not within the container go ahead and jump into a container with these commands.
+
+7
+00:00:31,510 --> 00:00:31,990
+Cool.
+
+8
+00:00:32,030 --> 00:00:36,810
+So now in bash we can use barrel's a variable is nothing like name.
+
+9
+00:00:36,850 --> 00:00:38,980
+And for example my name Ricardo.
+
+10
+00:00:39,370 --> 00:00:43,810
+So if I now do an echo for a name I will have these balloting here.
+
+11
+00:00:43,810 --> 00:00:50,870
+We want our shell to say Hello Ricardo the date and time is the output of the date.
+
+12
+00:00:50,950 --> 00:00:52,570
+C'mon how do we do this.
+
+13
+00:00:52,600 --> 00:00:53,540
+Pretty simple.
+
+14
+00:00:53,560 --> 00:01:00,280
+We do an echo and we say for example favorable with US dollars in here which is the variable that would
+
+15
+00:01:00,280 --> 00:01:02,660
+you vyne up your name.
+
+16
+00:01:02,830 --> 00:01:13,990
+So we say hello to the name and then we say the current That's the current date and time is the output
+
+17
+00:01:14,110 --> 00:01:14,650
+of the date.
+
+18
+00:01:14,650 --> 00:01:15,440
+Come on.
+
+19
+00:01:15,460 --> 00:01:16,930
+Pretty cool isn't it.
+
+20
+00:01:16,930 --> 00:01:18,580
+So we already knew how to do it is.
+
+21
+00:01:18,580 --> 00:01:21,710
+But this is something new using variables in bash.
+
+22
+00:01:21,760 --> 00:01:22,210
+OK.
+
+23
+00:01:22,240 --> 00:01:22,910
+Nice.
+
+24
+00:01:22,990 --> 00:01:29,490
+If we copy and paste these for Howard Jenkins job this is going to look exactly the same thing.
+
+25
+00:01:29,630 --> 00:01:34,270
+Oh but probably this is going to fail here because the variable doesn't exist.
+
+26
+00:01:34,270 --> 00:01:36,700
+So we need to define the variable map here.
+
+27
+00:01:36,730 --> 00:01:39,270
+Same name equals to Ricardo.
+
+28
+00:01:39,400 --> 00:01:40,020
+Cool.
+
+29
+00:01:40,030 --> 00:01:44,970
+So as you can see this is exactly the same content that we wrote on our terminal.
+
+30
+00:01:44,980 --> 00:01:50,610
+So if you want to test a Jenkin's job before running the job itself you can copy and paste the comments
+
+31
+00:01:50,620 --> 00:01:52,920
+to your terminal normally.
+
+32
+00:01:53,620 --> 00:01:54,030
+OK.
+
+33
+00:01:54,100 --> 00:01:57,180
+So let's save this and let's execute this job.
+
+34
+00:01:57,190 --> 00:02:01,490
+So we click on build now and we are going to see what happened.
+
+35
+00:02:01,510 --> 00:02:09,280
+So if we head to the Butte history to the last execution console output we're going to see the output
+
+36
+00:02:09,280 --> 00:02:10,900
+that we were expecting.
+
+37
+00:02:10,900 --> 00:02:12,620
+So it says Hello Ricardo.
+
+38
+00:02:12,760 --> 00:02:15,380
+Current date and time is the output of the date.
+
+39
+00:02:15,380 --> 00:02:15,850
+Come on.
+
+40
+00:02:15,850 --> 00:02:16,680
+Pretty cool.
+
+41
+00:02:16,840 --> 00:02:21,370
+But now what happens if you want to redirect that data into a fire.
+
+42
+00:02:21,370 --> 00:02:22,410
+How do we do this.
+
+43
+00:02:22,420 --> 00:02:23,620
+That's pretty simple.
+
+44
+00:02:23,620 --> 00:02:30,040
+We put design which is a redirections signing bash and then we give it a pad like for example Tam and
+
+45
+00:02:30,040 --> 00:02:33,560
+we say in full for example here ENTRAR.
+
+46
+00:02:33,670 --> 00:02:38,590
+And as you can see nothing comes in determiners our response.
+
+47
+00:02:38,770 --> 00:02:42,890
+But if we take a look on these file cats lasht damps lashed in full.
+
+48
+00:02:42,940 --> 00:02:46,710
+We're going to see the content within the file itself.
+
+49
+00:02:46,710 --> 00:02:54,040
+So this is pretty cool and we're going to do this from Jenkyns So let's remove the file that we just
+
+50
+00:02:54,040 --> 00:03:01,120
+created and if we do a cat to this file the file is no longer available because we already deleted it.
+
+51
+00:03:01,240 --> 00:03:05,960
+So now let's copy this command for the shell in here.
+
+52
+00:03:05,980 --> 00:03:13,960
+Let's click can configure let's delete our current configuration and let's pays the new one.
+
+53
+00:03:13,960 --> 00:03:16,610
+And as you can see we're redirecting these into a fight.
+
+54
+00:03:16,690 --> 00:03:20,440
+So OK let's click on safe and let's click on build.
+
+55
+00:03:20,440 --> 00:03:30,550
+Now if you see the built get to go to their number console output and as you can see the job actually
+
+56
+00:03:30,550 --> 00:03:31,890
+finish as it sits.
+
+57
+00:03:31,930 --> 00:03:36,560
+So now let's go to our container and let's look for a data file.
+
+58
+00:03:36,630 --> 00:03:38,380
+And as you can see it is perfect.
+
+59
+00:03:38,410 --> 00:03:43,030
+The file is actually being created from our Jenkin's job.
+
+60
+00:03:43,030 --> 00:03:48,190
+So for example if I removed the file again I do I cut the file doesn't exist anymore.
+
+61
+00:03:48,360 --> 00:03:50,210
+Verify Beeld.
+
+62
+00:03:50,260 --> 00:03:51,960
+Now the job.
+
+63
+00:03:52,000 --> 00:03:55,150
+Once again it's going to be Mark as succeeded.
+
+64
+00:03:55,330 --> 00:04:01,870
+And if we open the console output it says success and if we take calls on the file the file already
+
+65
+00:04:01,870 --> 00:04:07,520
+exists because the job created and this is the important part about it wanting to tell you as we're
+
+66
+00:04:07,540 --> 00:04:15,370
+using docker to host the service all of the files that we created are going to be saved within their
+
+67
+00:04:15,370 --> 00:04:16,000
+containers.
+
+68
+00:04:16,000 --> 00:04:24,070
+So if we go out of the container and we look on CAD temp info we don't have that file because it's a
+
+69
+00:04:24,070 --> 00:04:26,410
+completely different file system.
+
+70
+00:04:26,590 --> 00:04:32,980
+But if we go within that container then we have a fire that's cool.
+
+71
+00:04:32,980 --> 00:04:40,990
+And remember that you're Jenkin's container is a completely isolated process with it's sound or Purton
+
+72
+00:04:40,990 --> 00:04:47,510
+system in Linux distributions or that's why you can't see the file on your host.
+
+73
+00:04:47,920 --> 00:04:52,380
+But don't worry to solve that if you want to share files with your hosts.
+
+74
+00:04:52,390 --> 00:04:54,820
+You can use volume's we're going to see that later.
+
+75
+00:04:54,820 --> 00:04:56,310
+But don't worry for now.
+
+76
+00:04:56,440 --> 00:05:02,410
+Just keep in mind that the files that you are creating are being created within the container and if
+
+77
+00:05:02,410 --> 00:05:07,170
+you go outside of the container you are not going to find those files.
+
+78
+00:05:07,270 --> 00:05:09,810
+So this is said Ferdie's video.
+
+79
+00:05:09,820 --> 00:05:11,800
+See you in the next lesson.

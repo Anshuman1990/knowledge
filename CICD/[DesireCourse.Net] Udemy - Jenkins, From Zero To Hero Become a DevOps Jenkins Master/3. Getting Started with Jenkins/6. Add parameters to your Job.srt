@@ -1,0 +1,279 @@
+1
+00:00:00,540 --> 00:00:07,250
+Hello and welcome back in this video we're going to learn how to use parameters in Jenkin's.
+
+2
+00:00:07,290 --> 00:00:13,230
+So if you remember in the previous VDU we were creating parameters in bash so we were passing those
+
+3
+00:00:13,230 --> 00:00:15,580
+parameters coded.
+
+4
+00:00:15,990 --> 00:00:22,770
+So if we go to the configuration of our job and we take cure if we wanted to modify a parameter we would
+
+5
+00:00:22,770 --> 00:00:29,400
+need to change the parameter to for example something like Tom and then a last name which could be Smith
+
+6
+00:00:29,610 --> 00:00:37,320
+for example and then if I click on Save and then I build now the Joffe The output that we could expect
+
+7
+00:00:37,350 --> 00:00:41,740
+is something like Hello ton's med and that's perfect.
+
+8
+00:00:41,790 --> 00:00:43,320
+That's what we were expecting.
+
+9
+00:00:43,320 --> 00:00:47,990
+But what happens if we don't want to count your day job to change the parameter.
+
+10
+00:00:48,000 --> 00:00:54,090
+We want to be able of dynamically set the name that we want to greet.
+
+11
+00:00:54,090 --> 00:01:02,130
+So let's go ahead and configure our project and in these part is where the concept of parameter in jinking
+
+12
+00:01:02,130 --> 00:01:05,090
+comes in to their rescue.
+
+13
+00:01:06,080 --> 00:01:13,430
+So if we go here in the first section in that general section of that configuration for a day job we're
+
+14
+00:01:13,430 --> 00:01:16,040
+going to see a lot of options here.
+
+15
+00:01:16,060 --> 00:01:22,940
+But for now we are just going to choose the option that says this project is parametrized and then we're
+
+16
+00:01:22,940 --> 00:01:25,100
+going to add a parameter which is praise.
+
+17
+00:01:25,140 --> 00:01:27,380
+We have a lot of parameters here.
+
+18
+00:01:27,380 --> 00:01:29,450
+Don't worry we will see them later.
+
+19
+00:01:29,540 --> 00:01:37,460
+But for now let's use unnormal the string pedometer because for now we all want to pass the name and
+
+20
+00:01:37,550 --> 00:01:40,580
+the last name for the person that we want to get.
+
+21
+00:01:40,580 --> 00:01:46,160
+So let's say that we want the name to be name.
+
+22
+00:01:46,220 --> 00:01:49,360
+So this means the name of the pedometer.
+
+23
+00:01:49,550 --> 00:01:55,520
+In this case we want to call it as name so let's call it different that you can see it first name for
+
+24
+00:01:55,520 --> 00:01:59,540
+example and then we can give a default value if we want.
+
+25
+00:01:59,540 --> 00:02:04,430
+If we don't want don't we just leave it empty Let's go ahead and give it a default dollar with my name
+
+26
+00:02:05,090 --> 00:02:12,200
+and now we're going to add a second parameter strength barometer again and we're going to now use a
+
+27
+00:02:12,200 --> 00:02:14,430
+second name of that person.
+
+28
+00:02:14,450 --> 00:02:19,530
+So it was a second name and that we can give it that the full value.
+
+29
+00:02:19,670 --> 00:02:21,960
+So in my case let's give you my second name.
+
+30
+00:02:22,030 --> 00:02:23,720
+As you can see here.
+
+31
+00:02:23,900 --> 00:02:31,160
+So there is something that I want you to check here and this is the name the name means the name of
+
+32
+00:02:31,160 --> 00:02:33,620
+the verb for the name of the parameter.
+
+33
+00:02:33,620 --> 00:02:38,290
+So we're going to be referencing these names in our scripts.
+
+34
+00:02:38,300 --> 00:02:44,450
+So for example we're going to say hello first name and then it's going to take the value and then we
+
+35
+00:02:44,450 --> 00:02:48,780
+can say hello second name and then it's going to take this value.
+
+36
+00:02:48,980 --> 00:02:56,540
+So let's go down and let's modify our current configuration let's select diesel and let's run a simple
+
+37
+00:02:56,660 --> 00:03:04,430
+hello to the name that we are passing as a parameter so we can see EKU Halo and then we're passing a
+
+38
+00:03:04,430 --> 00:03:13,390
+first name parameter that we create it and then we can pass the second name parameter that we created.
+
+39
+00:03:13,520 --> 00:03:19,530
+So if you see these are the names that we're using first name and second name so cool.
+
+40
+00:03:19,540 --> 00:03:22,270
+We are saying hello first name and second name.
+
+41
+00:03:22,340 --> 00:03:24,240
+So let's go ahead and save this.
+
+42
+00:03:24,440 --> 00:03:30,370
+And now if you see the Bubo already change it now is built with parameters.
+
+43
+00:03:30,530 --> 00:03:34,820
+And what's going to happen if before executing the job.
+
+44
+00:03:35,480 --> 00:03:41,840
+It's going to ask for these pedometers So here is the first parameter that we created.
+
+45
+00:03:41,840 --> 00:03:44,390
+And here is the second named parameter we created.
+
+46
+00:03:44,630 --> 00:03:51,100
+So we can just leave the default value so you can see here and let's click on the build button.
+
+47
+00:03:51,140 --> 00:03:57,460
+So if you see the console output of this you're going to say this is not the up.
+
+48
+00:03:57,570 --> 00:03:58,170
+Is the third.
+
+49
+00:03:58,170 --> 00:04:04,460
+In my bed if you go here and you go to the console output you are going to see that Hello Ricardo which
+
+50
+00:04:04,460 --> 00:04:06,770
+is my first name and second name.
+
+51
+00:04:06,770 --> 00:04:11,840
+Cool but what happens if now we want to read not a person that's going to be easy but we're going to
+
+52
+00:04:11,840 --> 00:04:19,100
+say for example Hello Tom and then do that the second name I don't know that say Adam or something like
+
+53
+00:04:19,100 --> 00:04:19,500
+that.
+
+54
+00:04:19,670 --> 00:04:22,260
+And then click on Vote Now.
+
+55
+00:04:22,280 --> 00:04:23,930
+So you're going to see this is pending.
+
+56
+00:04:24,320 --> 00:04:25,020
+And cool.
+
+57
+00:04:25,040 --> 00:04:26,900
+We already have this execution.
+
+58
+00:04:26,930 --> 00:04:28,910
+So let's go to the console output.
+
+59
+00:04:29,060 --> 00:04:37,280
+And as you can see the name already change only by modifying their parameter before executing the job.
+
+60
+00:04:37,280 --> 00:04:44,740
+So Vael Dean jobs with parameter is actually quite powerful because we can divine the names or divert
+
+61
+00:04:44,800 --> 00:04:52,460
+eyeballs or files or parameters the hours that should execute without modifying the configuration of
+
+62
+00:04:52,460 --> 00:04:53,020
+the job.
+
+63
+00:04:53,120 --> 00:05:01,700
+So this for example we could define an environment like production here or def or Q A or staging or
+
+64
+00:05:01,700 --> 00:05:02,240
+whatever.
+
+65
+00:05:02,240 --> 00:05:05,650
+We can just create all the parameters that we want.
+
+66
+00:05:05,750 --> 00:05:12,870
+But for now let's keep in mind that a parameter is nothing else but an interactive verbal.
+
+67
+00:05:12,900 --> 00:05:21,020
+So before you build your job Jenkins is going to ask you for these values in order to populate the information
+
+68
+00:05:21,320 --> 00:05:25,340
+that is contained on the script that Jenkins is going to execute.
+
+69
+00:05:25,340 --> 00:05:27,530
+So this is it for this video.
+
+70
+00:05:27,530 --> 00:05:29,490
+See you in the next lesson.

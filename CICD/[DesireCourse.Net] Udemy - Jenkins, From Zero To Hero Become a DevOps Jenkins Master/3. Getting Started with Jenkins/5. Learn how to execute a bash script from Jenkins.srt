@@ -1,0 +1,415 @@
+1
+00:00:01,230 --> 00:00:06,810
+Hello and welcome back in this video we're going to learn how to execute on the script.
+
+2
+00:00:06,850 --> 00:00:09,820
+JENKINS So to achieve this.
+
+3
+00:00:09,840 --> 00:00:13,770
+The first thing that we need to do is of course to create in a script.
+
+4
+00:00:13,830 --> 00:00:16,740
+So let's head into our virtual machine.
+
+5
+00:00:16,800 --> 00:00:22,230
+Remember that in this case we we're outside of that container because we're going to create a sample
+
+6
+00:00:22,230 --> 00:00:23,040
+file.
+
+7
+00:00:23,130 --> 00:00:32,010
+So if we go inside of the container as we have learned this way and then we type B which is a text editor
+
+8
+00:00:32,310 --> 00:00:39,380
+we're going to have a natter and this is the because containers normally only half what they need.
+
+9
+00:00:39,380 --> 00:00:45,570
+So for example in this case Jenkin's only half packet is triggered into Jenkin's shooting have any order
+
+10
+00:00:45,570 --> 00:00:53,480
+package like network tools or elders because a container is meant to do only what it is meant to do.
+
+11
+00:00:53,700 --> 00:00:58,860
+That's why we're going to log out of the container and we're going to create the file here outside of
+
+12
+00:00:58,860 --> 00:00:59,790
+the container.
+
+13
+00:00:59,850 --> 00:01:07,440
+So let's create a simple script which can be code like a script that is age and remember that to type
+
+14
+00:01:07,440 --> 00:01:10,780
+in Pudi you need to press the letter I call.
+
+15
+00:01:10,890 --> 00:01:19,890
+So normally in Linux or when we are creating the scripts the first line informs which interpreter are
+
+16
+00:01:19,890 --> 00:01:20,580
+we going to use.
+
+17
+00:01:20,580 --> 00:01:22,500
+In this case we're going to use bash.
+
+18
+00:01:22,500 --> 00:01:24,710
+So that's why we're marking has been bashed.
+
+19
+00:01:25,410 --> 00:01:31,080
+So let's start with a sample script that is going to accept parameters and it's going to print out the
+
+20
+00:01:31,080 --> 00:01:33,610
+name and the last thing for one person.
+
+21
+00:01:33,630 --> 00:01:35,510
+So these would be like a..
+
+22
+00:01:35,610 --> 00:01:36,340
+Hello.
+
+23
+00:01:36,390 --> 00:01:41,670
+And then it's going to receive the name of one person and then that last name of that person.
+
+24
+00:01:41,670 --> 00:01:47,480
+So if we exit this is crap like this what do you think that's going to happen if I just go ahead and
+
+25
+00:01:47,480 --> 00:01:50,510
+you and I try to execute this script.
+
+26
+00:01:50,580 --> 00:01:51,570
+I will have.
+
+27
+00:01:51,670 --> 00:01:53,340
+The first error here.
+
+28
+00:01:53,480 --> 00:02:00,030
+OK to fix this we need to give executable permissions to fire and to do so we need to execute a command
+
+29
+00:02:00,060 --> 00:02:06,970
+change mode plus X which is going to give executable permissions to the file to then try again.
+
+30
+00:02:07,020 --> 00:02:08,300
+And you are going to see it.
+
+31
+00:02:08,430 --> 00:02:11,410
+The only one thing that comes is the helo.
+
+32
+00:02:11,580 --> 00:02:16,530
+So what we want to do is like for example we are going to call this a crib like this.
+
+33
+00:02:16,530 --> 00:02:20,780
+And then I want to pass my name and my last name in the script.
+
+34
+00:02:20,820 --> 00:02:29,680
+So this in this case should print these BERNHOLZ saying hello name and last names respectively.
+
+35
+00:02:29,730 --> 00:02:33,780
+So let's modify our script and lead at pedometers.
+
+36
+00:02:33,780 --> 00:02:39,720
+So in Bashan rhomboid parameters are represented with a dollar sign number one for the first parameter
+
+37
+00:02:39,900 --> 00:02:40,700
+dollar sign.
+
+38
+00:02:40,710 --> 00:02:42,980
+Number two the second parameter.
+
+39
+00:02:43,020 --> 00:02:44,620
+So on and so forth.
+
+40
+00:02:44,670 --> 00:02:50,910
+So in this case we're going to say that the variable name that we are mentioning here is going to be
+
+41
+00:02:50,910 --> 00:02:53,390
+a reference of the first parameter.
+
+42
+00:02:53,460 --> 00:02:54,080
+Cool.
+
+43
+00:02:54,120 --> 00:03:00,660
+So we're going to say that the last name that we're referencing heater it's going to be the Valley of
+
+44
+00:03:00,660 --> 00:03:03,760
+the second parameter that we are going to reset.
+
+45
+00:03:03,870 --> 00:03:05,650
+So that's like this.
+
+46
+00:03:05,730 --> 00:03:10,010
+And OK let's save this and let's execute this crypt again.
+
+47
+00:03:10,050 --> 00:03:16,230
+And as you can see cool it's actually it returning devalues that we are passing to the script itself
+
+48
+00:03:16,570 --> 00:03:18,360
+to cool.
+
+49
+00:03:18,390 --> 00:03:22,770
+Now if we want to execute this from Jenkins What do you think we need to do.
+
+50
+00:03:23,010 --> 00:03:29,770
+As I told you we are outside of the container which is completely isolated and different file system.
+
+51
+00:03:29,820 --> 00:03:36,080
+So our container can't see this file unless we copy that file to the container in the future.
+
+52
+00:03:36,090 --> 00:03:41,380
+We're going to learn how to use volumes and Ducrot to share data between the host and the container.
+
+53
+00:03:41,400 --> 00:03:46,230
+But for now that's just go ahead and copy the files that we just created to the container.
+
+54
+00:03:46,380 --> 00:03:51,250
+So for example let's say that we want to copy the file which is called the script that SH.
+
+55
+00:03:51,360 --> 00:03:56,290
+So we got Kurt C.P the name of the file that we want to copy.
+
+56
+00:03:56,340 --> 00:03:59,720
+Then the name of that container where we want a copy.
+
+57
+00:04:00,120 --> 00:04:02,470
+And then we put a call on and the full path.
+
+58
+00:04:02,610 --> 00:04:08,300
+So let's say that we want this to be call slushed slash script that is default pop.
+
+59
+00:04:08,460 --> 00:04:17,070
+So if we hit enter and then we go inside of a container like this and we take Culligan Tam script which
+
+60
+00:04:17,070 --> 00:04:21,460
+is the location that we defined before we are going to find easing here.
+
+61
+00:04:21,510 --> 00:04:22,200
+Pretty cool.
+
+62
+00:04:22,200 --> 00:04:24,260
+So we have our script here.
+
+63
+00:04:24,410 --> 00:04:26,590
+So how do we execute this cool.
+
+64
+00:04:26,610 --> 00:04:30,920
+We just take this full path and executed inside of the container.
+
+65
+00:04:30,990 --> 00:04:37,270
+And we are going to have an empty answer as you can see because we're not passing any promotors.
+
+66
+00:04:37,350 --> 00:04:42,180
+If we pass this then we're going to have both of the parameters in here.
+
+67
+00:04:42,180 --> 00:04:46,220
+So cool let's copy D-pad for a script.
+
+68
+00:04:46,410 --> 00:04:48,690
+Let's go to our job.
+
+69
+00:04:48,900 --> 00:04:55,860
+Let's click on configure and let's execute that as crib from the Jenkins shil.
+
+70
+00:04:56,080 --> 00:05:03,620
+Do you know how to do it so if you want do it before I do it otherwise I'm just going to do it right
+
+71
+00:05:03,620 --> 00:05:04,160
+away.
+
+72
+00:05:04,370 --> 00:05:09,490
+So it's going to be pretty simple as simple as it is we're just going to copy and paste this the path
+
+73
+00:05:09,530 --> 00:05:11,260
+and then we're going to pass the parameters.
+
+74
+00:05:11,280 --> 00:05:12,540
+Simple as that.
+
+75
+00:05:12,680 --> 00:05:18,620
+So you can just click here on safe and then if we build now what it's going to happen.
+
+76
+00:05:18,620 --> 00:05:25,940
+The Jenkyns is going to go to the file read this crap and it's going to pass the parameters that we
+
+77
+00:05:25,940 --> 00:05:34,640
+are passing in the shell and in the output as you can see we have the expected output.
+
+78
+00:05:34,820 --> 00:05:35,400
+Cool.
+
+79
+00:05:35,420 --> 00:05:37,290
+So again what happened here.
+
+80
+00:05:37,430 --> 00:05:46,850
+Jenkins from its shell actually took the parameters that we passed and dread them and at the same time
+
+81
+00:05:46,880 --> 00:05:49,970
+passed those parameters to the script.
+
+82
+00:05:50,000 --> 00:05:53,210
+We can do it pairs in various roles as well.
+
+83
+00:05:53,300 --> 00:06:02,840
+So we could say like name equal to my name and we could say last name equals to my last name and then
+
+84
+00:06:02,930 --> 00:06:06,130
+what we're going to pass here are diverse.
+
+85
+00:06:06,170 --> 00:06:10,770
+So we say like name and last name as you can see here.
+
+86
+00:06:10,820 --> 00:06:13,580
+And the output should be exactly the same.
+
+87
+00:06:13,580 --> 00:06:15,230
+So let's go ahead and save it.
+
+88
+00:06:15,290 --> 00:06:18,140
+Let go and click on the build button.
+
+89
+00:06:18,320 --> 00:06:21,480
+And as you can see we have an error here which is pretty cool.
+
+90
+00:06:21,590 --> 00:06:24,560
+We made a typo and what is that typo.
+
+91
+00:06:24,560 --> 00:06:26,280
+Can you spot it.
+
+92
+00:06:26,300 --> 00:06:28,580
+So the type it's pretty simple.
+
+93
+00:06:28,590 --> 00:06:31,120
+We define as easy here.
+
+94
+00:06:31,200 --> 00:06:37,000
+We're given variables but in this case we have any space here which is a problem.
+
+95
+00:06:37,040 --> 00:06:42,550
+So if we go ahead and fix that and then we click on safe and then we build it.
+
+96
+00:06:42,560 --> 00:06:47,570
+Now we're going to see that this is going to be blue again.
+
+97
+00:06:47,600 --> 00:06:55,700
+So what happens in Jenkins is that whenever an execution fails the caller of the real history it's going
+
+98
+00:06:55,700 --> 00:06:58,580
+to be red and it's going to be marked as failure.
+
+99
+00:06:58,670 --> 00:07:03,920
+But if it doesn't fail then it's going to be marked as X's and the color is going to be blue.
+
+100
+00:07:04,100 --> 00:07:11,360
+If we go into it comes out here and we take a look on the response we can see that we're defining the
+
+101
+00:07:11,360 --> 00:07:17,390
+variable name the variable last name of that we're passing those variables as parameters to our main
+
+102
+00:07:17,390 --> 00:07:18,230
+script.
+
+103
+00:07:18,230 --> 00:07:23,060
+And then the output is exactly as we were expecting which is pretty cool.
+
+104
+00:07:23,060 --> 00:07:27,380
+So OK this is it first is what you see in the next lesson.

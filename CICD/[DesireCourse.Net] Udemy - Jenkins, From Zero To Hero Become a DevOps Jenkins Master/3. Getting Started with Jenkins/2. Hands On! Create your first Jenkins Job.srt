@@ -1,0 +1,231 @@
+1
+00:00:00,810 --> 00:00:05,790
+Hello and welcome back OK in this video we're going to create our first map.
+
+2
+00:00:05,790 --> 00:00:08,240
+It's not going to be your job.
+
+3
+00:00:08,250 --> 00:00:13,650
+It's going to be pretty simple because it's our first job in the future we're going to do more interesting
+
+4
+00:00:13,650 --> 00:00:14,490
+things.
+
+5
+00:00:14,490 --> 00:00:19,410
+So to create a job we can either click here or create a new item.
+
+6
+00:00:19,410 --> 00:00:24,720
+So let's click on to create new item and now we need to give it a name.
+
+7
+00:00:24,750 --> 00:00:29,480
+So let's say that we want this job to be called my first job.
+
+8
+00:00:29,530 --> 00:00:32,670
+That was my first job.
+
+9
+00:00:35,420 --> 00:00:40,960
+We're going to click and freestyle project which is a simple project and we click OK.
+
+10
+00:00:41,510 --> 00:00:46,130
+After this you're going to see there's a screen with all of these can be green.
+
+11
+00:00:46,130 --> 00:00:51,820
+Don't worry I know it could be like overwhelming or something but it's pretty simple.
+
+12
+00:00:51,830 --> 00:00:57,230
+So the first thing that we're going to do or a difference in that I want you to keep in mind is that
+
+13
+00:00:57,230 --> 00:01:00,360
+a task is in Jenkin's called a job.
+
+14
+00:01:00,560 --> 00:01:09,620
+So you're probably going to see everywhere people using the concept of job in a job is nothing but a
+
+15
+00:01:09,620 --> 00:01:12,540
+task something that is going to be done.
+
+16
+00:01:12,590 --> 00:01:13,280
+That's a job.
+
+17
+00:01:13,280 --> 00:01:16,390
+So we're configuring here a job or a task.
+
+18
+00:01:16,430 --> 00:01:19,030
+But the concept in Jenkyns is a job.
+
+19
+00:01:19,400 --> 00:01:26,200
+So here in the Bills section we're going to build Stabb and we're going to look for execute command.
+
+20
+00:01:26,240 --> 00:01:34,100
+So I want to show you one thing and this is that these shil refers to our virtual machine but not entirely
+
+21
+00:01:34,100 --> 00:01:35,630
+to our virtual machine.
+
+22
+00:01:35,630 --> 00:01:44,240
+Remember that we created at container in here and these container actually has the Jenkin's service
+
+23
+00:01:44,540 --> 00:01:45,500
+up and running.
+
+24
+00:01:45,500 --> 00:01:51,980
+But if we look in our machine I mean outside of the container there is no Jenkin's server.
+
+25
+00:01:51,980 --> 00:01:54,580
+We don't even have Java installed as you can see.
+
+26
+00:01:54,830 --> 00:02:01,850
+But if we go inside of their container doing the correct section Dashti Jenkin's and asking for a bus
+
+27
+00:02:01,850 --> 00:02:09,020
+terminal we hit enter and if we type Java you are going to see that we have Javins or heater we can
+
+28
+00:02:09,020 --> 00:02:13,900
+even do a Java Dasch version and we have a Java insult within the container.
+
+29
+00:02:13,910 --> 00:02:15,510
+So let's make this clear.
+
+30
+00:02:15,710 --> 00:02:23,420
+We have our virtual machine which is nothing else but like the house of that container and that container
+
+31
+00:02:23,480 --> 00:02:29,160
+which can be placed using Dr APF is the service itself.
+
+32
+00:02:29,180 --> 00:02:36,210
+So as you can see when we do our Duckery except the terminal actually changes it's a perience.
+
+33
+00:02:36,230 --> 00:02:44,080
+For example in the creative file coach Hello slash stamp slash hello you're going to see that this file
+
+34
+00:02:44,080 --> 00:02:48,110
+is is going to be created only within that container.
+
+35
+00:02:48,290 --> 00:02:48,910
+Hello.
+
+36
+00:02:49,010 --> 00:02:55,070
+But if we go out of that container and we look for the same file these file doesn't exist.
+
+37
+00:02:55,070 --> 00:02:59,430
+So please keep in mind that everything that's going to happen and.
+
+38
+00:02:59,450 --> 00:03:03,270
+Jenkins Yup we'll look cure within their container.
+
+39
+00:03:03,290 --> 00:03:06,320
+I mean we've seen the darker expect Dashti.
+
+40
+00:03:06,380 --> 00:03:08,090
+It's not going to happen outside.
+
+41
+00:03:08,090 --> 00:03:15,910
+Not here but everything up would around every command anything is going to be running within that container.
+
+42
+00:03:16,160 --> 00:03:18,560
+It's time to start running our job.
+
+43
+00:03:18,590 --> 00:03:27,540
+So let's say echo Hello world which is you know the most popular cool for beginners in technology.
+
+44
+00:03:27,590 --> 00:03:31,870
+So let's click on Save here in after we say if that's click on.
+
+45
+00:03:31,880 --> 00:03:38,350
+Now they're built but on means viewed in a project so for now if we go here.
+
+46
+00:03:38,390 --> 00:03:45,380
+Console output we are going to see that our job executed took says Phlip printin.
+
+47
+00:03:45,530 --> 00:03:46,760
+Hello world.
+
+48
+00:03:46,880 --> 00:03:53,140
+So remember what we just did is to create and configure Jopp.
+
+49
+00:03:53,210 --> 00:03:59,050
+We added it step here as show step and then we said take him in kill hill work.
+
+50
+00:03:59,300 --> 00:04:04,030
+We saved this and then we clicked on the Beeld Nah burning.
+
+51
+00:04:04,640 --> 00:04:11,160
+So here we have a bill history we can just go into the number of the execution that we want to know.
+
+52
+00:04:11,340 --> 00:04:12,940
+Click on the console.
+
+53
+00:04:13,160 --> 00:04:19,040
+And then we have these output which means that the job executed correctly.
+
+54
+00:04:19,070 --> 00:04:21,010
+So you already created your first.
+
+55
+00:04:21,020 --> 00:04:22,010
+Yup cool.
+
+56
+00:04:22,060 --> 00:04:27,070
+Remember these job has been executed within the container not outside.
+
+57
+00:04:27,080 --> 00:04:28,890
+So having said this.
+
+58
+00:04:29,030 --> 00:04:31,080
+See you in the next lesson.

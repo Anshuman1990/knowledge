@@ -1,0 +1,227 @@
+1
+00:00:00,210 --> 00:00:02,520
+Kilo and work him back.
+
+2
+00:00:02,550 --> 00:00:07,980
+So in this video we're going to be playing weed our job off they job that we created in the previous
+
+3
+00:00:07,980 --> 00:00:09,030
+lesson.
+
+4
+00:00:09,030 --> 00:00:14,190
+And I just wanted to tell you that you can go to the Jenkin's home whenever you want.
+
+5
+00:00:15,010 --> 00:00:17,740
+Clicking on the Jenkin's button here.
+
+6
+00:00:17,740 --> 00:00:23,970
+So we're going to click in the name of our job and we're going to go into the configure section.
+
+7
+00:00:24,100 --> 00:00:29,590
+And as you can see we're again presented with this a screen that has all of that configuration.
+
+8
+00:00:29,610 --> 00:00:31,830
+And this is our current configuration.
+
+9
+00:00:31,960 --> 00:00:35,110
+So we're going to make this job more dynamic.
+
+10
+00:00:35,110 --> 00:00:38,200
+In Linux we have a cool command which is the date command.
+
+11
+00:00:38,230 --> 00:00:43,500
+So let's head to our virtual machine let's go inside of that container.
+
+12
+00:00:43,540 --> 00:00:48,780
+Remember that we are outside of the container because if we type Ducker P.S. We can see the container.
+
+13
+00:00:48,850 --> 00:00:53,140
+So we're going to go to the container except Dashti.
+
+14
+00:00:53,210 --> 00:00:57,470
+Jenkins Bash and here we are within the container as you can see.
+
+15
+00:00:57,490 --> 00:00:59,610
+This crane looks different.
+
+16
+00:00:59,720 --> 00:01:06,250
+So if we type in the date command here as you can see we have an output and that output is nothing else
+
+17
+00:01:06,270 --> 00:01:09,030
+but the current date and time.
+
+18
+00:01:09,040 --> 00:01:12,970
+So there is actually that it returns day command.
+
+19
+00:01:13,120 --> 00:01:20,290
+But what happens if you want to execute this command and I want to have text with this command for example
+
+20
+00:01:20,290 --> 00:01:25,660
+I want to say the date is and then I want that result of these date.
+
+21
+00:01:25,660 --> 00:01:27,590
+So how do I do this in Linux.
+
+22
+00:01:27,730 --> 00:01:35,320
+That's pretty easy employ you use the echo command and then you type your string like for example current
+
+23
+00:01:35,710 --> 00:01:38,980
+date is and then you want to execute the commands.
+
+24
+00:01:38,980 --> 00:01:40,440
+How do you execute the command.
+
+25
+00:01:40,600 --> 00:01:45,780
+You put Azango are here and then you put parentheses within the parentheses.
+
+26
+00:01:45,790 --> 00:01:49,580
+You'd type the command through on is good for example.
+
+27
+00:01:49,810 --> 00:01:54,810
+And as you can see it say it's current date is and it returns the value of the date.
+
+28
+00:01:54,820 --> 00:01:55,210
+Come on.
+
+29
+00:01:55,210 --> 00:01:59,150
+Which is pretty useful for doing whatever you want to.
+
+30
+00:01:59,200 --> 00:02:05,440
+I could say a note or a command like QMI for example and they could change.
+
+31
+00:02:05,550 --> 00:02:07,930
+You know they command and I want to say who am I.
+
+32
+00:02:07,930 --> 00:02:08,740
+For example.
+
+33
+00:02:08,800 --> 00:02:14,770
+And as you can see it's actually given the same text but returning different values based on the command
+
+34
+00:02:14,770 --> 00:02:16,380
+that I'm executing here.
+
+35
+00:02:16,390 --> 00:02:26,220
+So let's keep it like this with the date current date is this that's a current date and time cool.
+
+36
+00:02:26,240 --> 00:02:30,710
+So this command is actually awesome So we're going to copy this command.
+
+37
+00:02:30,860 --> 00:02:35,380
+And as you saw here on the job definition we have a shell.
+
+38
+00:02:35,480 --> 00:02:42,920
+So this is actually the same shell as this one so you can freely copy and paste the command that we
+
+39
+00:02:42,920 --> 00:02:45,660
+typed in the previous terminal in this terminal.
+
+40
+00:02:45,680 --> 00:02:47,560
+And this is going to work the same way.
+
+41
+00:02:47,690 --> 00:02:55,520
+So let's click on the safe and once you have that configure you click on Bill now and then you go to
+
+42
+00:02:55,520 --> 00:02:56,750
+that job.
+
+43
+00:02:57,140 --> 00:03:04,950
+Console output and then you see the output of the is which says current time current date and time is
+
+44
+00:03:05,220 --> 00:03:07,890
+the output of Dick Kamen.
+
+45
+00:03:07,890 --> 00:03:08,910
+Cool isn't it.
+
+46
+00:03:08,910 --> 00:03:13,240
+So for example here you are saying at 37 which is the second.
+
+47
+00:03:13,350 --> 00:03:19,740
+So let's hit big old ones again and let's see if there is any difference.
+
+48
+00:03:20,990 --> 00:03:23,450
+Where are you going to go here into debil history.
+
+49
+00:03:23,490 --> 00:03:24,780
+Job number four.
+
+50
+00:03:24,830 --> 00:03:26,950
+Click on console output and heater.
+
+51
+00:03:27,000 --> 00:03:33,530
+We're going to see that the day actually change the second change so there's means that Jenkyns is actually
+
+52
+00:03:33,530 --> 00:03:35,450
+being execute in their command.
+
+53
+00:03:35,450 --> 00:03:38,250
+Whenever we ask for it.
+
+54
+00:03:38,300 --> 00:03:39,290
+So this is pretty cool.
+
+55
+00:03:39,290 --> 00:03:42,370
+You already know how to use linux command within your.
+
+56
+00:03:42,370 --> 00:03:48,500
+Jenkins Yup and printed with text which is pretty useful sometimes.
+
+57
+00:03:48,500 --> 00:03:50,740
+So I'll see you in the next lesson.
