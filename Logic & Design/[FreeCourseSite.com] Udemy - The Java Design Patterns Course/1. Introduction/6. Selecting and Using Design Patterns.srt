@@ -1,0 +1,795 @@
+1
+00:00:05,220 --> 00:00:06,720
+Hi class Welcome back.
+
+2
+00:00:06,930 --> 00:00:12,210
+This lecture I wanna talk about selecting and using design patterns gives you an idea of what design
+
+3
+00:00:12,210 --> 00:00:15,570
+pattern should I use and what's specific situation.
+
+4
+00:00:17,490 --> 00:00:20,910
+So let's talk a little bit about overview in terms of software design approaches.
+
+5
+00:00:20,910 --> 00:00:23,550
+Before we talk about how to select things.
+
+6
+00:00:23,880 --> 00:00:29,680
+So normally when you design software it's a process of putting things together right.
+
+7
+00:00:29,730 --> 00:00:34,710
+A common approach is to look immediately for objects in classes and components and then think about
+
+8
+00:00:34,710 --> 00:00:36,200
+how they should fit together.
+
+9
+00:00:36,260 --> 00:00:40,770
+You identify the objects get all the classes together get the components together and then say Oh how
+
+10
+00:00:40,770 --> 00:00:41,370
+are they related.
+
+11
+00:00:41,370 --> 00:00:44,510
+How are we going to put them together so that we can work together.
+
+12
+00:00:44,670 --> 00:00:47,990
+That's typically how you do it.
+
+13
+00:00:48,060 --> 00:00:49,660
+That's not a great approach.
+
+14
+00:00:49,710 --> 00:00:51,330
+It's not very organized.
+
+15
+00:00:51,600 --> 00:00:59,000
+A better approach is to use one that's based on design patterns and you notice as we talk about design
+
+16
+00:00:59,000 --> 00:01:04,390
+patterns that you know just with the title design patterns that they're heavily related to design.
+
+17
+00:01:04,850 --> 00:01:09,860
+So in order to understand design patterns you first have to understand at least some high level components
+
+18
+00:01:09,860 --> 00:01:13,890
+of design and that's why in the beginning class we focus on that a little bit.
+
+19
+00:01:13,970 --> 00:01:18,410
+So with design patterns you start out with a conceptual understanding of the whole.
+
+20
+00:01:18,560 --> 00:01:23,690
+In order to understand what needs to be accomplished you know you kind of look at a high level you say
+
+21
+00:01:23,710 --> 00:01:31,630
+okay let's look at a conceptual level you identify the patterns that are present in the whole you think
+
+22
+00:01:31,630 --> 00:01:35,090
+about your problem in terms of the patterns that are present.
+
+23
+00:01:35,260 --> 00:01:42,260
+The purpose of the pattern is to define relationships among these different entities you start with
+
+24
+00:01:42,440 --> 00:01:45,800
+those patterns that create the context for the others.
+
+25
+00:01:45,890 --> 00:01:52,130
+That's your first approach you identify these patterns you look at the whole and then you start with
+
+26
+00:01:52,550 --> 00:01:55,190
+the specific patterns to create the context for the other
+
+27
+00:01:58,090 --> 00:02:03,460
+you then work inward from the context you look at the remaining patterns in any other patterns that
+
+28
+00:02:03,460 --> 00:02:08,410
+you might have uncovered you pick the patterns that define the context for the patterns that would remain
+
+29
+00:02:08,620 --> 00:02:14,290
+and then you repeat this cycle over and over and over again the repetition is again identify the patterns
+
+30
+00:02:14,290 --> 00:02:20,130
+that are present the whole start with those patterns that could create the context for the others and
+
+31
+00:02:20,140 --> 00:02:25,320
+then work inward from that context when you're done doing that over and over and over again where you
+
+32
+00:02:25,320 --> 00:02:30,990
+have all the patterns identified you then try to do some refining you find the design and you implement
+
+33
+00:02:30,990 --> 00:02:37,320
+within the context created by applying the patterns one at a time as you refine you always consider
+
+34
+00:02:37,320 --> 00:02:43,740
+the context implied by the patterns the implementation incorporates details dictated by the patterns
+
+35
+00:02:44,940 --> 00:02:51,540
+and this will be much more intuitive when we go through the implementation of each pattern when we attack
+
+36
+00:02:51,540 --> 00:02:54,600
+a big system and try to identify the patterns in the systems.
+
+37
+00:02:54,600 --> 00:03:00,090
+So not only do design patterns help you with specific smaller set of problems they can also help you
+
+38
+00:03:00,390 --> 00:03:05,730
+with a high level conceptual design by identifying patterns as a whole and then working your way through
+
+39
+00:03:05,730 --> 00:03:06,150
+it.
+
+40
+00:03:06,360 --> 00:03:11,280
+You don't always have to do this but this does help as opposed to just getting all these objects trying
+
+41
+00:03:11,280 --> 00:03:13,080
+to figure out how those objects work together.
+
+42
+00:03:13,080 --> 00:03:15,540
+Think of it in terms of design patterns.
+
+43
+00:03:16,230 --> 00:03:21,380
+Designing by adding concepts within the context of previously presenting concepts is attainable.
+
+44
+00:03:22,140 --> 00:03:27,220
+Well many of these patterns create robust software because they define context within which the classes
+
+45
+00:03:28,030 --> 00:03:30,490
+that implement them can work.
+
+46
+00:03:30,520 --> 00:03:36,100
+So I just wanted to talk about that real quickly that design patterns can help with your overall design
+
+47
+00:03:36,100 --> 00:03:41,320
+approach by looking at design parents conceptually so when you become an expert in design patterns you
+
+48
+00:03:41,320 --> 00:03:46,330
+understand all these different criminal behavior structural patterns that can help you become a better
+
+49
+00:03:46,330 --> 00:03:51,650
+designer because now you can think of terms of design patterns when designing a system as a whole.
+
+50
+00:03:51,890 --> 00:03:54,220
+There is more than 20 design patterns that we're going to study right.
+
+51
+00:03:54,220 --> 00:03:55,880
+Twenty three.
+
+52
+00:03:55,880 --> 00:03:59,280
+It's gonna be hard to find the one that addresses a particular design problem.
+
+53
+00:03:59,380 --> 00:04:02,380
+If you don't have a lot experience experience is gonna be the key.
+
+54
+00:04:02,380 --> 00:04:08,680
+Once you gain more and more experience it's going to be easier to choose which one in a specific situation.
+
+55
+00:04:08,680 --> 00:04:13,960
+There are different approaches to finding design pattern for the right problem.
+
+56
+00:04:14,050 --> 00:04:18,910
+You can consider how design patterns solve design problems so you can just look at the solutions and
+
+57
+00:04:18,910 --> 00:04:23,660
+then you can determine the object granularity of different kinds of patterns based on the solution.
+
+58
+00:04:23,920 --> 00:04:28,910
+You can see the interfaces that each pattern specifies with objects.
+
+59
+00:04:28,960 --> 00:04:33,850
+Understanding these concepts can help guide your search for the right pattern by looking at the solutions
+
+60
+00:04:33,850 --> 00:04:40,550
+looking at the interfaces in the solutions and the granularity of the solutions or you can look at the
+
+61
+00:04:40,550 --> 00:04:43,370
+intent the intent of the pattern.
+
+62
+00:04:43,500 --> 00:04:49,160
+What's really the purpose that can tell you exactly what pattern use in a given situation and the intent.
+
+63
+00:04:49,160 --> 00:04:54,370
+As I mentioned in earlier lectures that is always provided with the pattern itself.
+
+64
+00:04:54,530 --> 00:05:00,110
+You can identify if the intent is relevant to your problem and if it is you would use that pattern so
+
+65
+00:05:00,110 --> 00:05:05,150
+you can start by looking at the different classifications criminal structural behavior narrow down your
+
+66
+00:05:05,150 --> 00:05:08,960
+search based on the intent of those patterns whether or not you're going to create instances whether
+
+67
+00:05:08,960 --> 00:05:11,540
+or not the objects need to communicate from there.
+
+68
+00:05:11,660 --> 00:05:16,770
+You can look at each one of the patterns intent purpose and identify the pattern that way.
+
+69
+00:05:16,850 --> 00:05:22,150
+So first you can look at a higher level look at the solutions or you can look at the intent.
+
+70
+00:05:22,150 --> 00:05:27,110
+Another way to identify a pattern for a given situation is you can look how the patterns in or relate
+
+71
+00:05:27,110 --> 00:05:28,340
+to one another.
+
+72
+00:05:28,340 --> 00:05:33,140
+So if you understand the relationships between different patterns that can help direct you direct you
+
+73
+00:05:33,140 --> 00:05:40,120
+to the right pattern or at least the group patterns study you can study the patterns that have a like
+
+74
+00:05:40,120 --> 00:05:45,760
+purpose kind of it kind of forces you to do that through the classifications and then once you know
+
+75
+00:05:45,760 --> 00:05:50,170
+the like purposes you can identify the similarities and differences because sometimes you're going to
+
+76
+00:05:50,170 --> 00:05:53,530
+come down and you're gonna say okay I got it down to these two patterns.
+
+77
+00:05:53,530 --> 00:05:57,860
+The prototype and the Singleton but they're very similar so which one should I use.
+
+78
+00:05:57,880 --> 00:06:02,440
+That's when you look at similarities differences and you say Okay I think in this this situation the
+
+79
+00:06:02,440 --> 00:06:04,470
+prototype is going to work a little bit better than the Singleton.
+
+80
+00:06:04,990 --> 00:06:12,190
+So look at the purpose and similarities and differences choosing a pattern can cause examine the cause
+
+81
+00:06:12,190 --> 00:06:12,760
+of the redesign.
+
+82
+00:06:12,790 --> 00:06:17,830
+So if you determine why you're actually changing the design that you currently have.
+
+83
+00:06:17,830 --> 00:06:21,000
+If you're redesigning or refactoring you can look at that.
+
+84
+00:06:21,070 --> 00:06:25,100
+The cause of the redesign and that can help point you in the right direction.
+
+85
+00:06:25,330 --> 00:06:28,930
+So you find any issues in your problem that may cause a redesign.
+
+86
+00:06:28,930 --> 00:06:32,440
+Look at the patterns that help you avoid the causes of this redesign.
+
+87
+00:06:33,650 --> 00:06:37,720
+And then then you want to redesign it and it can point you in the right direction.
+
+88
+00:06:37,760 --> 00:06:43,520
+Consider what should what should be variable in your design variable means what changes what changes
+
+89
+00:06:43,520 --> 00:06:44,020
+in your design.
+
+90
+00:06:44,240 --> 00:06:51,020
+If you look at it your entire design and all the different objects which particular component is needed
+
+91
+00:06:51,020 --> 00:06:56,010
+most change doesn't change most often it's constantly changing that might be the right place to apply
+
+92
+00:06:56,010 --> 00:06:57,650
+a pattern.
+
+93
+00:06:57,650 --> 00:07:02,520
+This approach focuses on the on the causes the opposite of the causes right.
+
+94
+00:07:02,760 --> 00:07:06,030
+In the previous approach you can look at the cause of the redesign and say OK.
+
+95
+00:07:06,040 --> 00:07:10,880
+This is what I need to do in this approach you're actually looking at trying to identify beforehand
+
+96
+00:07:11,090 --> 00:07:13,910
+what are all the changes before you redesign.
+
+97
+00:07:13,910 --> 00:07:18,740
+And then that way you don't have to redesign if you pick patterns that allow for modify ability then
+
+98
+00:07:18,740 --> 00:07:19,990
+that reduces the redesign.
+
+99
+00:07:21,270 --> 00:07:25,720
+So what this does is you consider what you want to be able to change without doing a redesign.
+
+100
+00:07:25,770 --> 00:07:31,890
+The focus here is on encapsulating the concept that varies a theme of many design patterns design patterns
+
+101
+00:07:31,920 --> 00:07:36,690
+are going to allow for out of ability and so they're going to be very very isolated.
+
+102
+00:07:36,690 --> 00:07:39,990
+They're going to be loosely coupled so that when you want to add new things or you want to change the
+
+103
+00:07:39,990 --> 00:07:47,420
+existing things you don't affect a lot of different objects as far as once you understand what pattern
+
+104
+00:07:47,420 --> 00:07:51,550
+you want to you picked out the pattern that you think you need to use.
+
+105
+00:07:51,560 --> 00:07:53,210
+Well how do you actually use it to apply it.
+
+106
+00:07:54,080 --> 00:07:57,290
+So once you pick the pattern how do you use it.
+
+107
+00:07:57,350 --> 00:08:01,610
+You want to read the pattern once once through for an overview.
+
+108
+00:08:01,790 --> 00:08:02,240
+Right.
+
+109
+00:08:02,290 --> 00:08:05,810
+Maybe if you're not an expert in design patterns you need to refresh your memory.
+
+110
+00:08:05,810 --> 00:08:06,860
+Look at the pattern.
+
+111
+00:08:06,890 --> 00:08:11,510
+Read it over through for never you pay particular attention to the applicability in the consequences
+
+112
+00:08:11,510 --> 00:08:12,380
+of the pattern.
+
+113
+00:08:12,380 --> 00:08:17,030
+Remember we talked earlier about the common all patterns have they have a name.
+
+114
+00:08:17,360 --> 00:08:19,580
+Right they have an intent.
+
+115
+00:08:19,730 --> 00:08:23,620
+Consequences usually deal with advantages or disadvantages drawbacks.
+
+116
+00:08:23,690 --> 00:08:31,910
+When you look at this information in an overview that can tell you what you do with the pattern and
+
+117
+00:08:32,080 --> 00:08:35,320
+that will also ensure that the pattern that you picked is right for your pattern.
+
+118
+00:08:35,320 --> 00:08:41,050
+You want to kind of do a double check because once you actually identify the pattern you said this pattern
+
+119
+00:08:41,050 --> 00:08:41,850
+is right approach.
+
+120
+00:08:41,850 --> 00:08:47,240
+You want to look at the actual advantages and draw back because sometimes there's tradeoffs you then
+
+121
+00:08:47,240 --> 00:08:52,550
+go back and you study the structure of the participants and the collaboration of the pattern the structure
+
+122
+00:08:52,610 --> 00:08:58,040
+has to do with essentially the class diagram how the objects relate to one another whether that you
+
+123
+00:08:58,040 --> 00:09:00,340
+know the interfaces and subclasses and so forth.
+
+124
+00:09:00,530 --> 00:09:06,430
+The participants are names given to specific components of the structure and then the collaborations
+
+125
+00:09:06,520 --> 00:09:08,470
+are again how they work together.
+
+126
+00:09:08,570 --> 00:09:12,650
+You want to make sure you understand the design completely concerning the classes and objects and how
+
+127
+00:09:12,650 --> 00:09:13,930
+they relate to one another.
+
+128
+00:09:14,150 --> 00:09:14,810
+Right.
+
+129
+00:09:14,960 --> 00:09:18,800
+When you actually want to use it you know and we're going to all go through this in this class.
+
+130
+00:09:18,800 --> 00:09:24,410
+So this should be second hand but you need to understand this before you actually apply a pattern.
+
+131
+00:09:24,410 --> 00:09:28,430
+You want to look at sample code to see a concrete example of the pattern in code.
+
+132
+00:09:28,430 --> 00:09:34,010
+This will also help you become more comfortable with applying the pattern studying the code helps you
+
+133
+00:09:34,010 --> 00:09:39,540
+learn how to implement the pattern and you'll notice that as I go through the slide this is exactly
+
+134
+00:09:39,540 --> 00:09:42,360
+what we're going to do in our class.
+
+135
+00:09:42,480 --> 00:09:45,050
+You followed up with defining specific classes.
+
+136
+00:09:45,150 --> 00:09:51,870
+This includes any interfaces any inheritance relationships any aggregation of composition any instance
+
+137
+00:09:51,870 --> 00:09:55,620
+variables that represent data and object references inside the class.
+
+138
+00:09:55,620 --> 00:10:00,200
+You also can identify existing classes in your application that the pattern will effect.
+
+139
+00:10:00,270 --> 00:10:03,670
+Usually this is minimal because patterns are designed to be loosely coupled.
+
+140
+00:10:03,840 --> 00:10:08,790
+But when you do add a new pattern into an existing system make sure any of the dependencies or any things
+
+141
+00:10:08,790 --> 00:10:12,810
+that you're changing and makes you modify them accordingly to have minimal impact
+
+142
+00:10:15,860 --> 00:10:21,350
+you also have to choose names for the pattern participants that are meaningful in the application context.
+
+143
+00:10:21,350 --> 00:10:25,610
+So this is useful to incorporate the participant name into the name that appears in the application
+
+144
+00:10:25,610 --> 00:10:25,760
+right.
+
+145
+00:10:25,760 --> 00:10:30,880
+So this really just has to do with naming when you actually apply the pattern make sure you write use
+
+146
+00:10:30,890 --> 00:10:32,750
+good names for your classes and objects.
+
+147
+00:10:32,780 --> 00:10:36,150
+The best way to do this is when you look at the documentation for the pattern.
+
+148
+00:10:36,290 --> 00:10:40,700
+Look at the participants the participants identify really names that you should use.
+
+149
+00:10:40,850 --> 00:10:48,530
+So for example and in a builder you know you would maybe have a class that is is the builder class or
+
+150
+00:10:48,650 --> 00:10:50,590
+abstract builder would be the abstract class.
+
+151
+00:10:50,600 --> 00:10:57,650
+I mean it's usually very intuitive but sometimes some patterns have specific components or specific
+
+152
+00:10:59,000 --> 00:11:03,910
+names corresponding to the participants.
+
+153
+00:11:03,910 --> 00:11:09,670
+Another example would be the visitor has the visitor abstract class and then the visit T or.
+
+154
+00:11:09,670 --> 00:11:15,030
+And then also has a component named elements that you would use when you're designing your examples.
+
+155
+00:11:15,490 --> 00:11:18,660
+So the participant name is very important when you want to do your naming.
+
+156
+00:11:18,880 --> 00:11:21,750
+It just helps the pattern more explicit any actual implementation.
+
+157
+00:11:21,760 --> 00:11:22,240
+This goes.
+
+158
+00:11:22,240 --> 00:11:24,850
+This really has to do with all naming and all of your objects.
+
+159
+00:11:24,850 --> 00:11:30,850
+Another example here I provide is a strategy pattern for a text composing algorithm you might have classes
+
+160
+00:11:30,850 --> 00:11:34,450
+like simple layout strategy or text layout strategy.
+
+161
+00:11:34,450 --> 00:11:39,160
+Incorporate the names of the design pattern into your presentation as well as specific participants
+
+162
+00:11:39,250 --> 00:11:43,030
+into the implementation of the design pattern itself.
+
+163
+00:11:43,130 --> 00:11:46,740
+Define application specific names for operations in the pattern.
+
+164
+00:11:47,020 --> 00:11:51,530
+Use the responsibilities and collaborations associated with EAP operation as a guide.
+
+165
+00:11:51,550 --> 00:11:55,030
+Again we're going to go through the patterns you're going to see these responsibilities collaboration
+
+166
+00:11:55,780 --> 00:12:01,210
+work that into your code when you apply the pattern be consistent in your naming conventions.
+
+167
+00:12:01,210 --> 00:12:06,250
+You might use the Create prefix can't consistently to denote a factory method for example it's pretty
+
+168
+00:12:06,250 --> 00:12:10,610
+straightforward stuff but it's it's things that you have to focus on to write high quality code.
+
+169
+00:12:10,690 --> 00:12:16,700
+And as I mentioned high quality code is a specific aim and goal for this class.
+
+170
+00:12:16,870 --> 00:12:20,890
+You then want to implement the operations to carry out the responsibilities and collaboration in the
+
+171
+00:12:20,890 --> 00:12:21,580
+pattern.
+
+172
+00:12:21,640 --> 00:12:26,080
+And again you can do this efficiently by looking at coding examples.
+
+173
+00:12:26,110 --> 00:12:31,930
+We all do this even the experts will look at some examples to guide us but this is what how you want
+
+174
+00:12:31,930 --> 00:12:38,740
+to use and apply a pattern you want to go through these specific steps knowing the correct way to choose
+
+175
+00:12:38,740 --> 00:12:42,280
+a pattern to identify patterns and look at a design at a high level.
+
+176
+00:12:42,310 --> 00:12:46,570
+I want to tell you not want to tell you what you should not be doing.
+
+177
+00:12:46,780 --> 00:12:52,240
+So when you try to pick up a design pattern things that you shouldn't do you shouldn't just apply them
+
+178
+00:12:52,240 --> 00:12:52,900
+indiscriminately.
+
+179
+00:12:52,900 --> 00:12:55,900
+Again kind of a no brainer but just don't throw it in there and say oh here I am.
+
+180
+00:12:56,050 --> 00:13:00,510
+I want to use the singleton because I'm a big fan of singletons and I'm just gonna throw it in there.
+
+181
+00:13:00,520 --> 00:13:03,920
+Well it might not be useful it may complicate things.
+
+182
+00:13:04,060 --> 00:13:10,010
+Patterns often achieve flexibility and variability by true introducing additional levels of an interaction.
+
+183
+00:13:10,030 --> 00:13:14,530
+So although the pattern simplify things some of them may be complicated and they may actually use a
+
+184
+00:13:14,530 --> 00:13:20,200
+lot of objects and a lot of inheritance to provide this flexibility abstraction and variability.
+
+185
+00:13:20,890 --> 00:13:27,520
+But knowing that there can be tradeoffs whenever you add new levels or new design there are tradeoffs.
+
+186
+00:13:27,610 --> 00:13:32,730
+So sometimes the patterns can complicate the design or they can cost you some performance.
+
+187
+00:13:32,770 --> 00:13:38,110
+Again the advantages you're using a pattern and it's helping you a lot with flexibility and variability
+
+188
+00:13:38,770 --> 00:13:45,000
+but it may be a little complicated or maybe costing you performance you want to be careful with that.
+
+189
+00:13:45,150 --> 00:13:49,690
+So you want to make sure you look at that in order in terms of that tradeoff.
+
+190
+00:13:49,890 --> 00:13:54,670
+A design pattern should only be applied when the flexibility it affords is actually needed.
+
+191
+00:13:54,670 --> 00:13:59,960
+Don't add flexibility just flexibility sake if your code is already some more flexible flexible.
+
+192
+00:13:59,980 --> 00:14:02,950
+Don't try to make it more flexible it doesn't necessarily need to be.
+
+193
+00:14:03,130 --> 00:14:08,430
+You have to understand these specific details understand when the flexibility is needed.
+
+194
+00:14:08,560 --> 00:14:13,270
+The consequences of the design pattern are most helpful when evaluating patterns benefits and liabilities
+
+195
+00:14:13,540 --> 00:14:19,270
+consequences really are just that the benefits and liabilities you want to look at those to make sure
+
+196
+00:14:19,270 --> 00:14:23,860
+that you're not actually making the system again more complicated or more.
+
+197
+00:14:24,170 --> 00:14:32,490
+You know that tradeoff is worse off I just wanted to provide a quick overview of design patterns in
+
+198
+00:14:32,490 --> 00:14:37,930
+terms of how you can use and apply a design pattern.
+
+199
+00:14:37,950 --> 00:14:38,490
+Thank you.

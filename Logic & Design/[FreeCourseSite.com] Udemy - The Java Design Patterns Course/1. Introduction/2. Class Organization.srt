@@ -1,0 +1,339 @@
+1
+00:00:05,150 --> 00:00:07,040
+Hello and welcome back.
+
+2
+00:00:07,040 --> 00:00:10,710
+In this lecture I wanted to talk a little bit about how the class is organized.
+
+3
+00:00:10,730 --> 00:00:15,320
+The reason I wanted to provide this quick short lecture is so that it can help you better decide on
+
+4
+00:00:15,320 --> 00:00:18,110
+whether or not you want to sign up for the class purchase the class.
+
+5
+00:00:20,390 --> 00:00:25,640
+So this class is a little different than many of the classes on you dummy and that it's not just a how
+
+6
+00:00:25,640 --> 00:00:27,180
+to.
+
+7
+00:00:27,230 --> 00:00:31,610
+This class is organized around explaining all the concepts of programming language.
+
+8
+00:00:31,610 --> 00:00:37,250
+It's really focused on the why in addition to providing the how I'm going to provide many how tos on
+
+9
+00:00:37,250 --> 00:00:41,180
+how to write certain programs and demonstrate different concepts.
+
+10
+00:00:41,930 --> 00:00:46,700
+But again it's a little unique in that it's just not a how to you're going to understand concepts you're
+
+11
+00:00:46,700 --> 00:00:50,210
+going to understand why you're doing the things you're doing when you're writing your code.
+
+12
+00:00:50,330 --> 00:00:55,100
+So it's a complete learning experience at the end of this class you're going to fully understand the
+
+13
+00:00:55,100 --> 00:01:01,580
+program language specifically you're going to understand how the programming language works and all
+
+14
+00:01:01,580 --> 00:01:04,380
+the concepts associated with that language.
+
+15
+00:01:04,460 --> 00:01:09,480
+And again as I mentioned earlier I find this is lacking in many of the Udemy courses.
+
+16
+00:01:09,650 --> 00:01:17,990
+Many of the NUMMI courses are nothing more than demonstrations of projects of of certain how tos on
+
+17
+00:01:17,990 --> 00:01:25,130
+how to create a particular coding project without fully understanding what you're doing or why you're
+
+18
+00:01:25,130 --> 00:01:26,660
+doing it.
+
+19
+00:01:26,660 --> 00:01:31,550
+I also want to describe how I'm going to present this information and how you're going to learn it.
+
+20
+00:01:31,550 --> 00:01:37,040
+First and foremost we're going to have all video lectures you know that policy and you dummy is mainly
+
+21
+00:01:37,040 --> 00:01:42,290
+that the way they can provide a lot of some of the exact some of the material is going to provide it
+
+22
+00:01:42,290 --> 00:01:46,780
+through PowerPoint slides and some people are negative on PowerPoint slides.
+
+23
+00:01:46,790 --> 00:01:51,180
+They don't really like to learn from PowerPoint slides.
+
+24
+00:01:52,080 --> 00:01:54,380
+They're just real not keen on it.
+
+25
+00:01:54,380 --> 00:02:00,140
+The reason I provide PowerPoint slides is because I have to provide these concepts and definitions often
+
+26
+00:02:00,140 --> 00:02:06,640
+is the case and they're very abstract and I can't just go into an idea and demonstrate the code.
+
+27
+00:02:06,950 --> 00:02:10,130
+I have to provide the content some kind of text.
+
+28
+00:02:10,130 --> 00:02:12,480
+Now I could provide that notepad word pad.
+
+29
+00:02:12,530 --> 00:02:20,150
+Any other editor I choose PowerPoint slide PowerPoint because it has a nice visual representation and
+
+30
+00:02:20,150 --> 00:02:21,870
+it's very useful in that manner.
+
+31
+00:02:21,890 --> 00:02:26,900
+I'm not going to just be reading from the slides so I will hear some complaints often in other classes
+
+32
+00:02:27,200 --> 00:02:30,710
+where hey you're using PowerPoint slides and you just going to read from them.
+
+33
+00:02:30,860 --> 00:02:32,470
+Well no I'm not just going to read from them.
+
+34
+00:02:32,480 --> 00:02:35,320
+I'm going to provide insight via my experience.
+
+35
+00:02:35,630 --> 00:02:41,300
+So the PowerPoint slides again they're designed to provide for you the understanding of the material.
+
+36
+00:02:41,390 --> 00:02:47,270
+I'm not sure any other way I can do that without providing at least some PowerPoint slides especially
+
+37
+00:02:47,270 --> 00:02:49,490
+concerning abstract concepts and definitions.
+
+38
+00:02:49,490 --> 00:02:51,700
+I just don't know no other way to do it.
+
+39
+00:02:51,770 --> 00:02:55,340
+You have to listen and you have to try to understand from it.
+
+40
+00:02:55,340 --> 00:02:59,300
+Now that doesn't mean we're going to not going to provide other concepts of learning but there are going
+
+41
+00:02:59,300 --> 00:03:02,430
+to be PowerPoint slides so I understand that coming in the class.
+
+42
+00:03:02,480 --> 00:03:07,300
+And these are going to contain thorough explanations VMI experience.
+
+43
+00:03:07,310 --> 00:03:11,060
+It's a way for you to understand the concepts in the class.
+
+44
+00:03:11,060 --> 00:03:14,820
+It's not the only thing that I'm to provide but you are going to see a PowerPoint slide.
+
+45
+00:03:14,840 --> 00:03:20,600
+So don't just necessarily get negative on the entire class because there are PowerPoint slides.
+
+46
+00:03:20,600 --> 00:03:23,090
+It's one technique in helping you learn.
+
+47
+00:03:23,090 --> 00:03:28,550
+And I think a technique that needs that is needed in the class in addition to the PowerPoint slides.
+
+48
+00:03:28,580 --> 00:03:32,320
+I'm going to do tons of practical hands on demonstrations of code.
+
+49
+00:03:32,690 --> 00:03:37,640
+So I'm going to bring up the idea I'm going to bring up an editor I'm going to show you how to write
+
+50
+00:03:37,640 --> 00:03:39,400
+the code in an editor.
+
+51
+00:03:39,430 --> 00:03:42,190
+I'm write code examples I'm going to type in the code.
+
+52
+00:03:42,210 --> 00:03:43,260
+These are gonna be concrete.
+
+53
+00:03:43,250 --> 00:03:48,170
+They're gonna be real world so if this this type of learning will be more practical and we'll be more
+
+54
+00:03:48,170 --> 00:03:49,360
+hands on learning.
+
+55
+00:03:49,660 --> 00:03:52,040
+And I know many students like this and it's needed.
+
+56
+00:03:52,040 --> 00:03:57,200
+I love it because it's more practical and actually see you can see how I'm writing code.
+
+57
+00:03:57,560 --> 00:04:03,350
+Again though if I'm if I'm trying to present information or concepts such as polymorphism I also want
+
+58
+00:04:03,350 --> 00:04:07,880
+to provide a lecture or a PowerPoint slide associate with that to give you a formal definition so that
+
+59
+00:04:07,910 --> 00:04:11,630
+we don't just dive into the code and then you have to kind of scratch your head and say what exactly
+
+60
+00:04:11,630 --> 00:04:12,890
+is he doing in the code.
+
+61
+00:04:12,980 --> 00:04:18,710
+So pi point slides in addition and demonstrations are gonna be provided in this class.
+
+62
+00:04:18,770 --> 00:04:22,460
+This will help supplement your learning of the language itself.
+
+63
+00:04:22,460 --> 00:04:28,070
+In addition you need a way to assess how well you're doing in the class in what you're learning and
+
+64
+00:04:28,070 --> 00:04:33,470
+if you're learning so we're going to provide challenges challenges that are essentially coding assignments
+
+65
+00:04:33,720 --> 00:04:38,830
+through additional projects how it will work is provide you with this assignment.
+
+66
+00:04:38,870 --> 00:04:44,630
+I'll tell you the requirements explain maybe give you some tips on how to complete the challenge and
+
+67
+00:04:44,630 --> 00:04:46,360
+then you'll go off and do it on your own.
+
+68
+00:04:46,760 --> 00:04:51,800
+And then I'll provide another video which will be a solution to that lecture so you can see whether
+
+69
+00:04:51,800 --> 00:04:53,660
+or not you did it correctly.
+
+70
+00:04:53,660 --> 00:04:58,910
+The solution will be a complete walkthrough or what is called a code along of the solution.
+
+71
+00:04:58,910 --> 00:05:03,860
+I'll go line by line explaining every line of the solution in an integrated developed environment in
+
+72
+00:05:03,860 --> 00:05:06,920
+an environment where you write your code I'll run it.
+
+73
+00:05:06,980 --> 00:05:08,900
+I'll demonstrate how it works.
+
+74
+00:05:09,020 --> 00:05:09,700
+Everything.
+
+75
+00:05:10,570 --> 00:05:15,800
+And then addition to going through this video walkthrough I'll also provide all the source code to you
+
+76
+00:05:15,800 --> 00:05:22,880
+so that you can download it and you can compare the source code to your source code in text but again
+
+77
+00:05:22,880 --> 00:05:26,870
+I wanted to just provide this quick lecture so that you know how the class is organized in terms of
+
+78
+00:05:26,870 --> 00:05:29,730
+how you're going to learn and what you're paying for.
+
+79
+00:05:29,960 --> 00:05:35,450
+And if you see a lot of PowerPoint slides try to give you an idea of why provide them and why I think
+
+80
+00:05:35,450 --> 00:05:37,070
+they're useful.
+
+81
+00:05:37,070 --> 00:05:42,500
+Again I want to provide a complete learning environment and I don't think I can do that by just doing
+
+82
+00:05:42,500 --> 00:05:44,900
+a how to of walking through projects.
+
+83
+00:05:44,900 --> 00:05:50,590
+So I hope you appreciate this lecture and I hope you understand where I'm coming from and how you're
+
+84
+00:05:50,600 --> 00:05:51,440
+going to learn in this class.
+
+85
+00:05:51,440 --> 00:05:51,830
+Thank you.
