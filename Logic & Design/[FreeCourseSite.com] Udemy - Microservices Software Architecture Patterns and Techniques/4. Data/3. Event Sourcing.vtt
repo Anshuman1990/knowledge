@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00.890 --> 00:07.590
+In this lecture you will be learning about the event sourcing better that will help services keep track
+
+00:07.710 --> 00:11.880
+of state changes of objects in a reliable way.
+
+00:13.550 --> 00:21.230
+The main difference in event sourcing when compared to using a normal database to insert update and
+
+00:21.230 --> 00:31.180
+delete records is that we use an event store and versus events at services are able to subscribe to
+
+00:31.180 --> 00:38.880
+different types of events handled by the events or so in this way the events store acts as a form of
+
+00:38.880 --> 00:46.280
+message broker in the example illustrated here taken from an e-commerce scenario.
+
+00:46.280 --> 00:55.550
+When the product service updates the price of product a product database it also publishes an event
+
+00:55.760 --> 00:58.100
+with these details to the events.
+
+00:59.560 --> 01:06.160
+The product search service and the product recommendation service have subscribed with the events or
+
+01:06.400 --> 01:09.340
+to receive price updated events.
+
+01:09.610 --> 01:15.820
+And therefore when the event store receives the message published by the product service the product
+
+01:16.120 --> 01:24.220
+has had its price up dated to $5 it publishes this message to go out the product or service and the
+
+01:24.220 --> 01:34.990
+product recommendation service here is an example of how all events related to product a good beer in
+
+01:35.000 --> 01:35.960
+the event store.
+
+01:37.780 --> 01:43.530
+The event store is able to reconstruct the state of an object at any particular time.
+
+01:43.660 --> 01:48.730
+While you were playing the events affecting the object after that time.
+
+01:48.820 --> 01:56.320
+So for example if we wanted to know what the state of product was on the left and me to those at the
+
+01:56.320 --> 02:04.130
+meeting at 11:00 p.m. or process the events that occurred up to this time we don't think that we think
+
+02:04.450 --> 02:11.940
+the three latest events since these occurred the next day for optimisation purposes to reduce loading
+
+02:11.940 --> 02:20.320
+time the event store camporee or the store snapshots of objects in this case to get the objects going
+
+02:20.370 --> 02:28.110
+state the most recent snapshot is loaded and then on to the events that occurred after the snapshot
+
+02:28.400 --> 02:37.760
+needs to be processed to reconstruct the data state the frequency at which snapshots are taken is usually
+
+02:37.760 --> 02:44.480
+decided by the development team and depends on many factors including resources available.
+
+02:44.660 --> 02:52.290
+The number of objects that would require a snapshot and the frequency of events for each object the
+
+02:52.290 --> 02:59.430
+benefits of using an event sourcing better are that it provides reliable publishing of events in any
+
+02:59.430 --> 03:07.360
+event driven architecture since all events are saved this provides an audit log and we can determine
+
+03:07.360 --> 03:13.840
+the state of an object at any particular time in the past by replaying events up to that period.
+
+03:14.890 --> 03:21.520
+However the spending comes with a steep learning curve for the development team and it also results
+
+03:21.640 --> 03:28.990
+in addition to complexity including data that will usually require the use of Command query responsible
+
+03:29.010 --> 03:34.730
+to segregation in the application by subscribing to events from the message store.
+
+03:34.730 --> 03:40.920
+This would therefore mean that the data being queried is eventually consistent which is not always acceptable.
+
+03:42.480 --> 03:49.800
+It is an example of how events can be used to solve the problem of having to join data located across
+
+03:49.800 --> 03:56.740
+multiple services when we are using the database service better which we discussed in the databases
+
+03:56.790 --> 03:59.670
+lecture as you may have noted.
+
+03:59.950 --> 04:06.490
+This is a similar example as we used to date of Jesus lecture with the product recommendation service
+
+04:06.850 --> 04:15.270
+which requires order data from the order service and product information from the product service whenever
+
+04:15.280 --> 04:21.940
+the product service updates product information it publishes an event to the event store which then
+
+04:21.940 --> 04:22.970
+publishes it.
+
+04:23.020 --> 04:30.100
+So the product recommendation service which has subscribed to these events seminary the order service
+
+04:30.190 --> 04:36.800
+publishes an event to the events store when an order is created and the events store them publishes
+
+04:36.800 --> 04:40.610
+this sort of product recommendation service.
+
+04:40.830 --> 04:47.910
+In this way the product recommendation service is kept up to date with product and order information
+
+04:48.170 --> 04:56.160
+that it requires to keep and updated in memory view to generate product recommendations to customers
+
+04:56.430 --> 04:59.800
+without needing to send queries for large data sets.
+
+04:59.850 --> 05:02.190
+So the product service and the order service.

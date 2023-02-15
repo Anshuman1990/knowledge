@@ -1,0 +1,115 @@
+WEBVTT
+
+00:01.770 --> 00:10.190
+In this lecture we will be learning about to face comet unlike a transaction on a local database a distributed
+
+00:10.200 --> 00:17.190
+transaction involves altering data on multiple databases which is a situation that often arises when
+
+00:17.190 --> 00:25.810
+using the database service but then as it is processing of distribute transactions is more complicated
+
+00:26.170 --> 00:32.830
+because the database must coordinate the call meeting or rolling Beckles changes in a transaction as
+
+00:32.920 --> 00:35.400
+a self-contained unit.
+
+00:35.400 --> 00:43.110
+In other words the entire transaction commits or the entire transaction Groesbeck the two faced Combest
+
+00:43.160 --> 00:50.810
+mechanism can be used to ensure the integrity of data in a distributed transaction.
+
+00:50.820 --> 00:53.170
+So let's say we have the following scenario.
+
+00:53.340 --> 00:57.100
+In any e-commerce system when placing an order.
+
+00:57.220 --> 01:05.290
+So first the payment service takes the customer's payment then the order service creates the order in
+
+01:05.290 --> 01:09.210
+the database and finally the product service reserves.
+
+01:09.220 --> 01:13.150
+Products from stock to the customer.
+
+01:13.250 --> 01:16.780
+What would happen if the payment service takes the payment.
+
+01:16.850 --> 01:24.950
+But in order face to be created or an order is created but products were not reserved from stock perhaps
+
+01:25.270 --> 01:27.960
+as they were just sold out.
+
+01:28.060 --> 01:35.950
+In this case the data in our system would not be entirely consistent and correct as the steps to fully
+
+01:35.950 --> 01:44.710
+create an order would all have been partially completed leading to this inconsistent state in such scenarios.
+
+01:44.730 --> 01:51.430
+We can make use of the two faced Committee better to help maintain data integrity to do this.
+
+01:51.430 --> 02:00.030
+We will require a separate service that act as the coordinator for the two faced commit as the name
+
+02:00.030 --> 02:00.830
+implies.
+
+02:00.990 --> 02:08.670
+There are two phases and two faced commit betting in the first phase which is the committee to request.
+
+02:08.690 --> 02:16.130
+The coordinator sends a query to commit message to each service involved in distributing transaction
+
+02:17.140 --> 02:25.800
+the services execute the transaction but not commit and data play with a yes or no depending on whether
+
+02:25.950 --> 02:27.180
+they were successful.
+
+02:28.890 --> 02:36.640
+In the second phase which is the court met face if all services have applied yes then to coordinate
+
+02:36.640 --> 02:44.310
+their sons commit message to each of the services and these will then commit the transaction and reply
+
+02:44.490 --> 02:47.010
+with an acknowledgement.
+
+02:47.040 --> 02:51.060
+However if at least one service has replied with no.
+
+02:51.220 --> 02:56.540
+The coordinator sends a real message and the services roll back the transaction.
+
+02:58.490 --> 03:06.170
+It is also possible that all the services that reply with a yes in the committee request face and then
+
+03:06.410 --> 03:12.640
+one service place with the negative acknowledgement in the goalmouth face based.
+
+03:12.890 --> 03:20.180
+In this case the coordinator must send another message to all services to revert to previous transactions
+
+03:20.210 --> 03:29.310
+actions as you can see the two face it is very useful in helping to guarantee the integrity of data
+
+03:29.490 --> 03:30.380
+in our system.
+
+03:31.470 --> 03:39.180
+Its main disadvantage however apart from the additional development complexity is that it is a blocking
+
+03:39.180 --> 03:46.200
+protocol meaning that the services will wait indefinitely for the coordinator to instruct on how they
+
+03:46.200 --> 03:47.220
+should proceed.
+
+03:48.460 --> 03:53.260
+This means that if the coordinator goes down the service is called tangan differently.

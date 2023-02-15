@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00.930 --> 00:07.320
+In this lecture we will be learning about the failure mechanism in our micro service system with many
+
+00:07.410 --> 00:09.250
+interconnected services.
+
+00:09.250 --> 00:16.000
+There and that being many critical resources both hardware and software that the system relies on.
+
+00:16.080 --> 00:22.490
+It is important to have redundancy on each of these resources and ensure that they are highly available.
+
+00:23.500 --> 00:27.370
+This is sometimes overlooked in Monat systems.
+
+00:27.490 --> 00:34.460
+As for example the server or its processes have a ninety nine point nine percent uptime guarantee.
+
+00:34.540 --> 00:41.110
+And so it is very unlikely that they will ever failed however the micro services due to the number of
+
+00:41.110 --> 00:47.500
+hardware and software components and services chained together all of which have a very small chance
+
+00:47.500 --> 00:48.390
+of failing.
+
+00:48.670 --> 00:52.920
+It is much more likely for something to fail bringing down the whole system.
+
+00:54.400 --> 01:01.000
+As an example Ive used the service registry which is a service were discussed in previous lectures that
+
+01:01.000 --> 01:07.100
+is critical to our system as all services depend on it to locate other services in the network.
+
+01:07.990 --> 01:14.830
+We should have a redundant service registry that must be in sync with the primary service registry.
+
+01:14.900 --> 01:21.710
+It's also important to note that the redundant services and components should be hosted strategically.
+
+01:21.710 --> 01:27.950
+This means that they should run on different machines so the primary service to avoid both of them going
+
+01:27.950 --> 01:32.350
+down at the same time in case of hardware failure.
+
+01:32.510 --> 01:39.500
+The number of redundant instances we should have used depends on how critical component is and the probability
+
+01:39.590 --> 01:40.530
+of it failing.
+
+01:41.910 --> 01:48.510
+If a service to request the service registry and is unable to connect it should immediately attempt
+
+01:48.510 --> 01:52.270
+to connect to do redundant services just registry.
+
+01:52.450 --> 01:59.170
+It is important that we log when the fail over resource has been used to be able to react and identify
+
+01:59.280 --> 02:01.710
+where the primaries are trained.
+
+02:02.170 --> 02:07.840
+As I mentioned earlier it's not only the services that we should make highly available but also any
+
+02:07.840 --> 02:09.740
+resource that this system depends on.

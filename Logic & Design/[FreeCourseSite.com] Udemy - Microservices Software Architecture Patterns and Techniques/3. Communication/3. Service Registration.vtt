@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00.880 --> 00:06.670
+In this lecture we're going to be learning about the micro service registry which is an important component
+
+00:06.880 --> 00:12.910
+required in micro services architecture in order to be able to support dynamic scaling.
+
+00:13.300 --> 00:16.780
+It will micro Service wants to send a request to another.
+
+00:16.900 --> 00:24.020
+It must be able to be aware of the available instances of the microwaves and their network location.
+
+00:24.170 --> 00:30.380
+Ideally the number of instances of each micro service may be scale dynamically adjust to changes in
+
+00:30.380 --> 00:31.280
+load.
+
+00:31.370 --> 00:36.980
+In order for this to be possible other services that use the micro service must be able to handle these
+
+00:36.980 --> 00:40.010
+changes in order to solve this problem.
+
+00:40.010 --> 00:46.730
+You can introduce a service register component that holds a database of the currently available instances
+
+00:46.730 --> 00:53.550
+for each micro service and their network location will not talk about how the micro service registry
+
+00:53.760 --> 01:02.070
+keeps track of the available instances for a micro service when a micro service instance starts up it
+
+01:02.080 --> 01:09.290
+registers itself with the service registry which will add this micro servicing instance to its database.
+
+01:09.300 --> 01:16.280
+Similarly when the micro service instance shots done it sends a request to the registry which will remove
+
+01:16.290 --> 01:23.480
+the micro service instance from its database of available instances took all their cases where the micro
+
+01:23.480 --> 01:30.230
+service instance may fail unexpectedly and so may not send the call to the service registry to remove
+
+01:30.230 --> 01:38.660
+itself as it should on normal service shut down can introduce a health check API on each microbus instance
+
+01:38.920 --> 01:44.630
+that the service registry can use to ensure that each micro service instance registered with it will
+
+01:44.630 --> 01:45.500
+be available.
+
+01:45.740 --> 01:48.210
+It's currently active.
+
+01:48.350 --> 01:57.060
+We'll discuss the culture API in Surtur detail in future Nectars when a micro service is required.
+
+01:57.060 --> 02:03.050
+Bissette of research study Squitti to find the available instances of this Microcircuits and their network
+
+02:03.050 --> 02:03.890
+locations.
+
+02:05.790 --> 02:12.270
+Although Microcircuits mintage Solms registration and removal from the service registry Escanaba seen
+
+02:12.270 --> 02:19.020
+here it's possible for this to be handled by a separate registrar service that handles this functionality
+
+02:19.080 --> 02:21.350
+for all micro services in this system.
+
+02:22.300 --> 02:28.630
+This would offload responsibility from the macro service and centralize this to the registrar.
+
+02:28.670 --> 02:33.500
+However this of course adds another component to the managed in the system.

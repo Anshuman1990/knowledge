@@ -1,0 +1,49 @@
+WEBVTT
+
+00:00.730 --> 00:08.010
+In this lecture we will be learning about the purpose and implementation of the health check API which
+
+00:08.010 --> 00:12.190
+we have discussed in previous lectures.
+
+00:12.380 --> 00:21.450
+The magic API is a route that should be available on services that expose an API endpoint this route
+
+00:21.640 --> 00:25.500
+can be created to update the service status.
+
+00:25.640 --> 00:30.440
+The standard response schools that are generally used are two hundred.
+
+00:30.470 --> 00:31.160
+OK.
+
+00:31.160 --> 00:38.570
+If the service is healthy and the five hundred response code if the service is in an air state however
+
+00:38.930 --> 00:45.980
+custom responses can also be added if you'd like to include more information to the consumers of the
+
+00:45.980 --> 00:47.420
+head check API.
+
+00:48.860 --> 00:56.010
+The health check API is usually called frequently by services such as the service registry to check
+
+00:56.130 --> 00:59.970
+if the service is still available to direct traffic to it.
+
+01:00.060 --> 01:09.220
+As we discussed in the earlier lectures it is also commonly used by monitoring services in order to
+
+01:09.220 --> 01:14.560
+raise alerts if the service is created are in an unhealthy state.
+
+01:16.220 --> 01:22.770
+As the head of the API is something that will behave similarly across all services and should be included
+
+01:23.010 --> 01:27.180
+in all micro services exposing an API endpoint.
+
+01:27.240 --> 01:31.860
+It is a good candidate for a model to be included in the Microcircuits template.

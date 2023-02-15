@@ -1,0 +1,79 @@
+WEBVTT
+
+00:00.820 --> 00:07.170
+In this lecture will be learning about the circuit breaker pattern that will help prevent failures in
+
+00:07.170 --> 00:13.750
+some part of the network or in a particular micro service from bringing down the entire system.
+
+00:15.310 --> 00:22.210
+When a service sends a synchronous request to another service it's possible that the other service is
+
+00:22.210 --> 00:29.450
+unavailable or under too much load to respond in a reasonable period as more requests are received.
+
+00:29.470 --> 00:35.470
+The number of threats blocked waiting for a response from the service continues to pile up and further
+
+00:35.470 --> 00:38.530
+reduce the chance of disservices recovering.
+
+00:39.810 --> 00:47.550
+Additionally these logged threats can result in resource exhaustion leading to errors cascading to other
+
+00:47.550 --> 00:54.780
+services and potentially cascade strokes the whole system rendering it unusable.
+
+00:56.850 --> 01:04.320
+To prevent such a scenario from cascading to other components services are requesting other micro services
+
+01:04.470 --> 01:12.360
+in a synchronous manner should do so through a module known as a circuit breaker this module keeps track
+
+01:12.810 --> 01:20.190
+of the number of consecutive requests to a service that has failed and the certain threshold is exceeded
+
+01:20.490 --> 01:25.300
+and the request to the service will fail immediately for a timeout period.
+
+01:26.270 --> 01:32.240
+Wants to timeout period has passed a limited number of requests are performed to see if the service
+
+01:32.240 --> 01:33.720
+has recovered.
+
+01:33.720 --> 01:37.580
+If so the normal operation is resumed.
+
+01:37.580 --> 01:39.870
+Otherwise the timeout is restarted.
+
+01:41.350 --> 01:47.770
+The use of a timeout period avoids continuing to overload the service and improves the chance of it
+
+01:47.770 --> 01:48.770
+took cover Inc.
+
+01:48.880 --> 01:56.490
+It also prevents potential resource exhaustion issues from cascading through out the system.
+
+01:56.520 --> 02:02.580
+There is no recommended time will tell you as this depends on normal processing times in a specific
+
+02:02.580 --> 02:10.170
+system but as a rule of thumb it is usually set to a few seconds with this value increasing each time
+
+02:10.170 --> 02:14.070
+the time of value passes and the service is still unavailable.
+
+02:15.360 --> 02:21.720
+The circuit breaker is a crosscutting model that should be included in all Microcircuits is performing
+
+02:21.720 --> 02:25.790
+synchronous requests to their Microcircuits is intense.
+
+02:25.860 --> 02:30.660
+We can consider including it as a reference in the Microcircuits template.
+
+02:30.850 --> 02:34.130
+This can be removed if it's not required by the service.

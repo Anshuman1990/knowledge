@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00.910 --> 00:08.140
+In this lecture we will be talking about how to set up our code repositories and how these decisions
+
+00:08.200 --> 00:16.510
+on how to set up the call depositary should reflect our choice in using Microcircuits architecture we
+
+00:16.630 --> 00:23.710
+can structure our code depositories to be either a single mono that where all are called will be contained
+
+00:23.860 --> 00:26.330
+inside a single deposit three.
+
+00:26.500 --> 00:33.520
+It's interesting to know that this is the approach that some companies including Google and Facebook
+
+00:33.550 --> 00:37.550
+take in handling their called the deposit structure.
+
+00:37.560 --> 00:45.090
+Alternatively you can use a discreet code repository set up where the code base is split into several
+
+00:45.090 --> 00:53.920
+smaller depositories perhaps based on the domain or component will not go through the advantages and
+
+00:53.920 --> 00:57.830
+disadvantages of each of these code repository setups.
+
+00:58.000 --> 01:04.270
+So we will be able to take an informed decision on which is more suitable for your development process.
+
+01:05.700 --> 01:10.020
+In a the trip was the three also referred to as a mana repo.
+
+01:10.050 --> 01:17.850
+In short it was easier to keep input and output contracts in sync which is especially important when
+
+01:17.850 --> 01:24.310
+using a Microcircuits is architecture due to the large number of input and output contracts.
+
+01:24.360 --> 01:27.620
+There will be for each micro service conversion.
+
+01:27.640 --> 01:33.030
+Then there was a tree with a big number that could help us in deployments.
+
+01:33.040 --> 01:40.120
+However if Demona repo contains code that is used by different teams this could mean that one team could
+
+01:40.120 --> 01:46.090
+break in build and disrupt the continuous integration and delivery of processes for other things.
+
+01:47.420 --> 01:54.110
+When all our components are inside same Was it three it is easier to create unnecessary tight coupling
+
+01:54.140 --> 02:03.060
+between components and therefore a more disciplined development process is required to avoid this since
+
+02:03.240 --> 02:06.150
+all the code will be inside the same repository.
+
+02:06.270 --> 02:14.220
+This will mean long continuous integration times and also relatively large code depositary So Donald
+
+02:16.210 --> 02:22.400
+discrete depositories on the other hand have their own set of advantages and disadvantages.
+
+02:23.260 --> 02:30.740
+Just different depositories are worked up on by different things the concept of code ownership is more
+
+02:30.740 --> 02:37.910
+clear which results in at least one thing having complete knowledge of the contents of each depositary
+
+02:38.810 --> 02:45.490
+the scope of each of the three is also more clear since it is smaller and hence its scope is more well
+
+02:45.520 --> 02:46.200
+defined.
+
+02:47.050 --> 02:52.990
+On the other hand contradicts versioning becomes more complex as we all have to package the contents
+
+02:52.990 --> 02:56.410
+of repositories and reference them from other projects.
+
+02:56.470 --> 03:04.150
+Specific version numbers which can be quite a task when we have micro services with many different inputs
+
+03:04.270 --> 03:12.290
+and outputs contexts unless managed properly discrete depositories and easy to become monoliths as their
+
+03:12.290 --> 03:17.430
+contents continue to grow both in size and scope and in doing so.
+
+03:17.480 --> 03:23.030
+This defeats the purpose of using a discrete structure in the first place.
+
+03:24.640 --> 03:31.590
+There is also some additional upfront cost in setting up each of the depositories and the respective
+
+03:31.740 --> 03:34.630
+continuous integration and delivery pipelines.
+
+03:36.200 --> 03:41.960
+With all that being said I'm sure the question you are asking is which Kolderup was it that set up is
+
+03:41.960 --> 03:45.710
+more ideal for Microsoft or is architecture.
+
+03:45.710 --> 03:53.150
+Personally my experience managing the versioning required in ski trip was a is when Microsoft is involved
+
+03:53.330 --> 04:00.710
+with their inter-dependent input and output contracts quickly becomes overwhelming especially when you
+
+04:00.710 --> 04:05.520
+have a large number of micro services in our case.
+
+04:05.620 --> 04:12.450
+We ended up switching to one of a three for all the components forming part of our Steam's subsystem
+
+04:13.830 --> 04:21.190
+this choice is also very dependent on your development process as using a mono repository successfully
+
+04:21.370 --> 04:27.970
+requires a good code review process to help prevent unnecessary dependencies from being created.
+
+04:29.320 --> 04:35.860
+One general rule which I've also seen applied successfully in development teams is having a single or
+
+04:35.870 --> 04:43.180
+was it reported the way and therefore the beckoned to follow up was the structure was having D-y and
+
+04:43.180 --> 04:49.530
+beckoned themes working in separate depositories and having D-y and beckoned version together.

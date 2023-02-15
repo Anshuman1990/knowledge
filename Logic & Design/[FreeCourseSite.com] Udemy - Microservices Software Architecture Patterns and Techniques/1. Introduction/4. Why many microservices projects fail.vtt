@@ -1,0 +1,94 @@
+WEBVTT
+
+00:00.970 --> 00:06.320
+In this lecture we will be discussing why many Microcircuits projects fail.
+
+00:07.330 --> 00:10.910
+Now failure can mean many different things.
+
+00:10.930 --> 00:17.860
+So for example it can mean that the project failed to be delivered on time or failed to reach certain
+
+00:17.860 --> 00:26.060
+requirements such as may be scalability or in the worst case when the project was not delivered at all.
+
+00:27.080 --> 00:34.190
+Apart from the normal risk factors and projects which are outside the area of control of the development
+
+00:34.190 --> 00:35.580
+perspective.
+
+00:35.630 --> 00:41.660
+Esther beaute many failures in micro-chip is this projects to a combination of the following factors
+
+00:42.940 --> 00:50.470
+lack of planning is a common factor as micro services tend to take more development effort than if a
+
+00:50.470 --> 00:58.580
+similar system had been developed in other architectures such as may be multi-tiered architecture.
+
+00:58.740 --> 01:05.880
+There could also be design and implementation issues caused by a combination of lack of knowledge of
+
+01:05.880 --> 01:12.100
+how to implement Microcircuits properly and lack of actual experience and skills in doing so.
+
+01:14.030 --> 01:20.210
+In many development projects there also tends to be an underestimation in the additional development
+
+01:20.630 --> 01:28.470
+deployment monitoring and configuration of micro services and their interprocess communication infrastructure.
+
+01:29.430 --> 01:36.540
+These reasons all tend to stem from lack of experience in managing Microcircuits related projects and
+
+01:36.540 --> 01:37.750
+their implementation.
+
+01:38.160 --> 01:45.030
+And as a result they assume that implementing a Microcircuits based system is very similar to developping
+
+01:45.030 --> 01:52.050
+some of their web service they've implemented in the past without realising the added resources and
+
+01:52.050 --> 01:58.570
+time needed due to the higher number of micro services required to build a complex system.
+
+02:00.560 --> 02:07.700
+To prevent micro service based projects from failing it is important to ensure that the project you
+
+02:07.700 --> 02:12.590
+are designing is applicable to the macro service architecture.
+
+02:12.600 --> 02:18.360
+I highly recommend that you prioritise automation in all aspects possible.
+
+02:18.360 --> 02:25.860
+This includes continuous integration deployments and also creating Microcircuits templates which we'll
+
+02:25.860 --> 02:28.280
+be discussing in future lectures.
+
+02:29.500 --> 02:36.970
+It's also important to have a clear plan and this means not only having proper design of the system
+
+02:37.330 --> 02:45.040
+but also estimating the time required to develop the different micro services correctly to create and
+
+02:45.050 --> 02:48.200
+plan a realistic and manageable shed yule.
+
+02:49.880 --> 02:58.340
+Finally and perhaps this is the most important point is to avoid common pitfalls by falling into untyped
+
+02:58.440 --> 03:05.300
+terms which are usually the cause by taking the design decisions without proper knowledge of their impact
+
+03:05.450 --> 03:07.180
+on a micro service architecture.
+
+03:08.670 --> 03:15.180
+We'll be going to all the most important patterns in discourse to help make sure that you have the tools
+
+03:15.420 --> 03:19.340
+to design and micro services based system effectively.

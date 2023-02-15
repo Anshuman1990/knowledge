@@ -1,0 +1,100 @@
+WEBVTT
+
+00:01.140 --> 00:07.420
+In this lecture you will be learning about different ways in which micro services in our system can
+
+00:07.420 --> 00:09.280
+communicate with each other.
+
+00:10.190 --> 00:17.260
+One way is through normal procedure invocation where a micro service sends a request to another Microcircuits
+
+00:17.390 --> 00:25.410
+and waits for response this remote procedure inculcation is simple and familiar to understand and can
+
+00:25.410 --> 00:32.950
+be done using technologies such as rest end up wash it drift though it is usually used in a synchronous
+
+00:32.950 --> 00:35.150
+manner in the request through a flight pattern.
+
+00:35.290 --> 00:40.840
+It's good to keep in mind that other communication patterns are also possible though less common and
+
+00:40.840 --> 00:47.160
+usual harder to implement in the illustrated example from the e-commerce Web site.
+
+00:47.230 --> 00:53.980
+You can see that the card cost calculator micro service makes a request to the shipping cost calculator
+
+00:54.040 --> 00:55.630
+micro service.
+
+00:55.630 --> 01:01.700
+In this case it would be to obtain the total of shipping costs for a shopping cart to include this in
+
+01:01.770 --> 01:09.830
+the total shopping cart costs and the wait for a response from this micro service those synchronous
+
+01:09.830 --> 01:13.730
+communication is usually the most common resistance.
+
+01:13.790 --> 01:21.950
+You can also make use of asynchronous communication methods such as asynchronous message based communication
+
+01:23.660 --> 01:30.260
+message based communication is most widely used in a synchronous communication when the response is
+
+01:30.260 --> 01:31.890
+not immediate required.
+
+01:33.150 --> 01:40.480
+And micro service can publish a message on the message bus that will be delivered to other micro services.
+
+01:40.500 --> 01:46.850
+This means that the communication is dependent upon message broker such as that MQ.
+
+01:47.250 --> 01:54.870
+However it also means that you'll have looser coupling between services a synchronous communication
+
+01:54.900 --> 02:01.050
+patterns are usually implemented in this way such as the Publish subscribe better.
+
+02:01.050 --> 02:06.930
+However it's interesting to note that a synchronous message based communication can also be used to
+
+02:06.930 --> 02:11.670
+implement requests reply synchronous communication.
+
+02:11.690 --> 02:18.680
+However this is not recommended as you would end up adding additional complexity and overhead and therefore
+
+02:18.800 --> 02:24.770
+you should stick to synchronous communication methods such as remote procedure cation when synchronous
+
+02:24.770 --> 02:32.890
+communication is needed and use a synchronous message based communication only synchronous data flows.
+
+02:32.990 --> 02:39.000
+In some cases you may end up using some custom or domain specific communication protocols which can
+
+02:39.110 --> 02:45.220
+essentially be the only option when communicating to some third party system or a legacy service which
+
+02:45.220 --> 02:52.610
+could require protocols for example such as FTB or sympathy or maybe even some custom domain protocol
+
+02:52.700 --> 02:54.650
+created by an enterprise system.
+
+02:55.870 --> 03:02.290
+Course I recommend that you stick to the most commonly used communication protocols where possible and
+
+03:02.290 --> 03:09.220
+distinguish between a synchronous and synchronous communication flows to help design the system better.
+
+03:10.000 --> 03:15.490
+Would be going through an assignment that would help you learn how to evaluate communication between
+
+03:15.550 --> 03:20.380
+services and establish the ideal communication method in each scenario.

@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00.940 --> 00:07.030
+In this lecture we will be learning about the saga better which is an alternative to Two-Face commit
+
+00:07.300 --> 00:15.480
+to manage distributed transactions saga and be considered a sequence of local transactions in different
+
+00:15.480 --> 00:23.320
+micro services each local transaction updates the database of the micro service and then publishes a
+
+00:23.320 --> 00:27.880
+message or event to trigger the next local transaction in the saga.
+
+00:28.320 --> 00:35.780
+If one local transaction fails the saga executes a series of compensating transactions lateral exchanges
+
+00:35.950 --> 00:44.220
+of local transactions forming part of the distributive transaction that have already been executed.
+
+00:44.230 --> 00:48.550
+There are too many different types of Saga implementations.
+
+00:48.550 --> 00:55.720
+The first is choreographic base saw us where each Stoeckel transaction publishes domain events that
+
+00:55.720 --> 01:00.880
+will trigger local transactions in other services until the saga is completed.
+
+01:01.240 --> 01:07.690
+So in this example here where the payment service Dienste payment from a customer then the order is
+
+01:07.690 --> 01:16.140
+created and then the products are reserved for the customer the order service first sends a payment
+
+01:16.140 --> 01:20.110
+request vent to the message broker to start the saga.
+
+01:20.520 --> 01:27.630
+The payment service which has subscribed to the payment requests haven't received this message and attempts
+
+01:27.750 --> 01:30.140
+to obtain payment from the customer.
+
+01:31.130 --> 01:37.730
+It then sends a message indicating the payment has been received successfully which will be picked up
+
+01:37.970 --> 01:40.550
+by the order service.
+
+01:40.720 --> 01:47.320
+If the payment was not received successfully the saga ends and no further actions are needed.
+
+01:47.320 --> 01:54.570
+However if the payment was received successfully the order service attempts to create the order and
+
+01:54.580 --> 02:01.780
+sends an event indicating if this was successful which is picked up by bought the product Tervis and
+
+02:01.780 --> 02:10.330
+payment service if the order creation was not successful then the payment service must execute the compensating
+
+02:10.330 --> 02:16.720
+transactions to roll back the actions taken to date payments from the customer which would most likely
+
+02:16.720 --> 02:23.320
+involve a refund and sending an email to the customer or notifying them on the screen if the order was
+
+02:23.320 --> 02:30.430
+created successfully the product service which subscribes to this event will attempt to reserve the
+
+02:30.430 --> 02:33.090
+products requested for the order.
+
+02:33.130 --> 02:39.730
+It will then send an event indicating whether the products were reserved successfully.
+
+02:39.730 --> 02:44.720
+If so then the saga ends as no further actions are required.
+
+02:45.500 --> 02:52.350
+However if the products were not preserved successfully both the order service and the payment service
+
+02:52.460 --> 02:56.400
+will roll back the actions they have performed in this saga.
+
+02:56.400 --> 03:05.130
+Compensating transactions as you can see do a distribute transactions are handled is different from
+
+03:05.130 --> 03:11.970
+to face commet where transactions would not be committed to the database before these have been approved
+
+03:12.080 --> 03:22.040
+by all participating micro services the alternative way of implementing some of us is by using and orchestrator
+
+03:22.990 --> 03:30.140
+in orchestrator based Saugus and orchestrator which is usually spawned specifically for each Psagot
+
+03:30.980 --> 03:37.220
+instruct the micro services involved in the saga what local transactions to execute.
+
+03:37.220 --> 03:44.750
+So basically it coordinates the whole saga to use the same example that was taken for the choreographic
+
+03:44.750 --> 03:49.520
+base saga and implement it using an orchestrator.
+
+03:49.520 --> 03:56.360
+The order service creates an order saga object which doesn't need to be a separate service it can just
+
+03:56.360 --> 04:01.010
+be an object residing inside the order service.
+
+04:01.040 --> 04:08.030
+The order creation saga will instruct the payment service to request payment and we'll wait for a message
+
+04:08.150 --> 04:12.010
+indicating if payment was received successfully.
+
+04:12.070 --> 04:18.030
+If not then the order creation saga terminates immediately as no more actions are required.
+
+04:19.000 --> 04:26.740
+However if payment was received successfully during the creation saga sends a message to the order service
+
+04:26.950 --> 04:34.710
+to create an order the order service will then reply to the order creation saga on whether the order
+
+04:34.770 --> 04:42.530
+was created successfully if the order wasn't created successfully the order creation saga instructs
+
+04:42.530 --> 04:47.930
+the payment service to roll back its previous actions taken to request payment.
+
+04:48.110 --> 04:56.280
+And then this saga terminates on the other hand if the order was created successfully the order creation
+
+04:56.280 --> 05:04.600
+saga sends a request to the product service to reserve product the product service with a new like with
+
+05:04.600 --> 05:09.820
+a message indicating if the products were successfully.
+
+05:09.860 --> 05:16.580
+If so then the saga can terminate as no further actions are required in the saga.
+
+05:16.580 --> 05:23.210
+However if the product service didn't manage to reserve the product then the order creation saga will
+
+05:23.230 --> 05:30.110
+notify boat or their service and payment service to roll back the previous actions they have taken in
+
+05:30.110 --> 05:30.990
+the saga.
+
+05:33.040 --> 05:39.370
+The overall advantages of the saga operator are that it then a bill is an application to maintain data
+
+05:39.370 --> 05:42.620
+consistency across multiple services.
+
+05:42.640 --> 05:49.730
+However as you can see the development process becomes more complex and also takes longer compensating
+
+05:49.730 --> 05:54.900
+actions need to be developed for each transaction to be able to roll back.
+
+05:54.950 --> 06:01.900
+Also ideally the micro service should publish the event and update the database atomically to prevent
+
+06:01.960 --> 06:05.910
+race conditions and potential data inconsistencies.
+
+06:06.310 --> 06:12.500
+This implies that certain data related patterns should be used that support this.
+
+06:12.580 --> 06:19.900
+One of the most popular is event sourcing which we discussed in the earlier lectures but it's also possible
+
+06:20.050 --> 06:25.960
+with other less common patterns such as using a database trigger to write events to a table that is
+
+06:25.960 --> 06:29.190
+spoiled by a process that publishes these events.

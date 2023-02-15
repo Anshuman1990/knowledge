@@ -1,0 +1,52 @@
+WEBVTT
+
+00:01.130 --> 00:08.180
+In the previous lecture was so debt database service better leads to changes when query spending data
+
+00:08.400 --> 00:11.630
+contained across multiple services are required.
+
+00:13.350 --> 00:22.320
+One solution to this is API composition which we'll be learning about in this lecture in API composition
+
+00:22.770 --> 00:30.630
+ex-service referred to as the API composer queries data from multiple services and then performs and
+
+00:30.690 --> 00:39.230
+in memory joyn of the data obtained to produce the final result an example of this from an e-commerce
+
+00:39.320 --> 00:41.400
+scenario is illustrated here.
+
+00:42.730 --> 00:50.460
+The product recommendation service desk will be the APL composer in this case requires the customer's
+
+00:50.540 --> 00:57.850
+order history and the product details of the items in each order to be able to recommend new products
+
+00:57.970 --> 01:04.510
+to a customer the product recommendation service will send the request to get the order history data
+
+01:04.600 --> 01:12.550
+from the order history service and the product data from the product service data retrieved from both
+
+01:12.550 --> 01:18.190
+these services is then combined in memory to generate the required result.
+
+01:19.610 --> 01:23.880
+All the API composition is relatively simple to implement.
+
+01:23.910 --> 01:25.450
+It is not always feasible.
+
+01:25.600 --> 01:33.150
+Some queries that would require a joint functionality over data hand and different services would require
+
+01:33.300 --> 01:40.060
+large data sets to be transferred to the composer making this very inefficient.
+
+01:40.190 --> 01:47.450
+We will discuss an alternative solution which can be applied when using a composition is not a feasible
+
+01:47.450 --> 01:49.280
+solution in the next lectures.

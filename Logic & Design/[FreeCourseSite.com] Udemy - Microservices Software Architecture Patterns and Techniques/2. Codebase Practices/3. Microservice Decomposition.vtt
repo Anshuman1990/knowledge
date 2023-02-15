@@ -1,0 +1,79 @@
+WEBVTT
+
+00:03.400 --> 00:10.470
+In this picture would be learning about how to decompose system into several micro services perhaps
+
+00:10.470 --> 00:11.830
+the most important thing.
+
+00:11.830 --> 00:18.410
+To keep in mind when designing the structure of micro services is that these should be mostly coupled
+
+00:18.570 --> 00:25.620
+from each other but you have high cohesion meaning that each micro service will contain only things
+
+00:25.740 --> 00:28.330
+that are strongly related to each other.
+
+00:29.450 --> 00:36.200
+We should also keep in mind what is known as the common closure Principle which states that things that
+
+00:36.200 --> 00:38.710
+often change do gooder should be prickish to.
+
+00:39.610 --> 00:46.600
+This will help in facilitating deployments as if to reduce the number of services that need to be deployed
+
+00:46.630 --> 00:47.740
+for each change.
+
+00:47.860 --> 00:55.700
+And as much as possible it will help ensure that a business logic change needs to affect only one service.
+
+00:55.900 --> 01:03.060
+The most widely used method of decomposing a system into micro services is through business capability.
+
+01:03.160 --> 01:10.210
+So if for example we have an e-commerce site and two of its core functions are order management and
+
+01:10.210 --> 01:16.790
+shopping carts management the different business capabilities are required in each area would be further
+
+01:16.790 --> 01:23.310
+broken down to help make sure the micro services are fine grained and promote loose coupling and high
+
+01:23.330 --> 01:24.320
+cohesion.
+
+01:24.710 --> 01:32.090
+So for example forming part of the order management business capability we could have an order history
+
+01:32.270 --> 01:39.500
+micro service and order placement micro service and order chequing micro service and order dispute micro
+
+01:39.500 --> 01:41.090
+service.
+
+01:41.090 --> 01:47.480
+Similarly the shopping cart management business functionalities for the e-commerce site could be broken
+
+01:47.480 --> 01:54.860
+down into the micro services cart selling cars cost co-curator carts promotions and abandoned cartes
+
+01:54.890 --> 01:56.930
+recovery.
+
+01:57.120 --> 02:05.040
+In some cases especially in systems with many different technical or complex processes that are obstructed
+
+02:05.370 --> 02:08.820
+or not but related to the business capabilities.
+
+02:09.270 --> 02:16.200
+It may also be required to decompose the system into micro services not only based on the business capabilities
+
+02:16.530 --> 02:23.130
+but also on technical capabilities or functional objectives to make sure that each Microcircuits has
+
+02:23.220 --> 02:25.140
+a suitable level of granularity.

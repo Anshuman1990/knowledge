@@ -1,0 +1,115 @@
+WEBVTT
+
+00:00.960 --> 00:07.690
+In the previous lecture with learnt all micro services this is register their network location with
+
+00:07.690 --> 00:09.760
+the service registry.
+
+00:09.970 --> 00:17.020
+In this lecture we will learn about how micro service instances need to send requests to other micro
+
+00:17.020 --> 00:24.010
+services are able to query the service registry either directly or indirectly in order to obtain the
+
+00:24.010 --> 00:28.640
+network location of the required micro service.
+
+00:28.650 --> 00:35.040
+The first technique which is also known as plain site discovery is when the micro service that needs
+
+00:35.040 --> 00:41.940
+to call another micro service directory queries the service just registry to obtain the network location
+
+00:42.180 --> 00:46.570
+for instance of the required service.
+
+00:46.570 --> 00:54.370
+So for example if the card costs like greater service which we mentioned in earlier examples needs to
+
+00:54.370 --> 01:01.720
+call the delivery costs co-creator service it will first query service registry for an instance of the
+
+01:01.720 --> 01:09.200
+delivery of course co-curator service the service history would reply to the court costs a greater service
+
+01:09.460 --> 01:10.790
+with the network location.
+
+01:10.810 --> 01:17.520
+One of the instances of the delivery costs gave greater service the service registry those will have
+
+01:17.520 --> 01:23.670
+some load balancing logic in order to determine which instance to select.
+
+01:23.730 --> 01:29.550
+Finally the cost of course co-creators service will use this network location to send the request to
+
+01:29.550 --> 01:40.280
+the services this the alternative to clain site discovery is server side discovery in Silverside discovery
+
+01:40.580 --> 01:45.550
+the micro service performing request would have no knowledge of the service registry.
+
+01:46.470 --> 01:48.850
+It would simply send the request to a.
+
+01:48.870 --> 01:56.160
+But in this endpoint the answer would then query the service registry for an instance of the required
+
+01:56.400 --> 02:05.380
+service and point and forward the request did and here you can see the card cost creator service example
+
+02:05.680 --> 02:07.770
+using server side discovery.
+
+02:07.930 --> 02:13.690
+So the cart costs co-create our service sends the requests to the load but instant point which queries
+
+02:13.810 --> 02:20.680
+services just the things and network location for an instance of the delivery cost co-creator service
+
+02:20.920 --> 02:24.740
+and the request is sent to that instance.
+
+02:24.920 --> 02:31.350
+One of the main advantages of server side discovery overclaim site discovery is that it is easier for
+
+02:31.370 --> 02:36.410
+clients since they don't have the responsibility of quitting the service registry.
+
+02:36.620 --> 02:41.910
+And although this may seem trivial since this cold would be the same for all micro services.
+
+02:42.020 --> 02:48.470
+Keep in mind that in a Microsoft architecture different micro services could be written in different
+
+02:48.470 --> 02:50.310
+programming languages.
+
+02:50.340 --> 02:58.810
+Also any change to this logic on the client side would require upgrading all micro services.
+
+02:58.860 --> 03:05.460
+However one disadvantage of using server side discovery is that there are more network hops involved
+
+03:05.700 --> 03:10.350
+before the request finally arrives at the destination Micro's service.
+
+03:10.590 --> 03:16.920
+Although in some cases the service registry is built as part of the load but answer which would reduce
+
+03:17.280 --> 03:19.950
+their on time.
+
+03:19.960 --> 03:25.750
+Another thing to keep in mind when using server side discovery is that the old answer is of course another
+
+03:25.800 --> 03:29.220
+component that needs to be managed in the system.
+
+03:29.700 --> 03:34.600
+And of course we would need to make sure that it is reliable and highly available.
+
+03:35.010 --> 03:37.910
+As it becomes a critical component in the network.

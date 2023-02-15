@@ -1,0 +1,109 @@
+WEBVTT
+
+00:01.590 --> 00:07.790
+One of the most common problems encountered by developers will begin developing micro services is the
+
+00:07.790 --> 00:13.510
+impact that this will have on how to handle data access storage and manipulation.
+
+00:14.520 --> 00:21.300
+In this lecture we will learn about the different patterns of how data can be managed in a Microcircuits
+
+00:21.330 --> 00:30.670
+environment and the advantages and disadvantages of these petards the first better is the shared database
+
+00:30.680 --> 00:34.840
+better where services can access each other's data.
+
+00:35.200 --> 00:42.110
+For example the order placement micro service would be able to access customer details and also productivity's
+
+00:42.760 --> 00:49.120
+which are managed by the customer details micro service and product beater's micro service respectively.
+
+00:50.290 --> 00:58.600
+Database transactions are used to guarantee data consistency and integrity although having a single
+
+00:58.600 --> 01:04.760
+shared database may seem easier to manage and those are the most flexible to query to date.
+
+01:04.990 --> 01:11.140
+This will eventually cause problems in development asking what changes can affect multiple services
+
+01:11.350 --> 01:18.200
+and doing such changes becomes changing as more micro services referenced the common database.
+
+01:18.210 --> 01:24.990
+It is also possible to run into performance issues as one service may be blocked trying to access data
+
+01:25.080 --> 01:32.490
+that is being modified by another service despair formants issues also tend to be harder to track down
+
+01:32.760 --> 01:39.450
+as a long running database query could have spent substantial time waiting for data locked by other
+
+01:39.450 --> 01:43.670
+service to become available as a result.
+
+01:43.810 --> 01:50.680
+The shared database pattern is sometimes considered an Antipater especially for larger more complex
+
+01:50.680 --> 01:58.120
+systems as in such cases the performance and development drawbacks combine far outweigh its benefits
+
+02:00.600 --> 02:02.970
+the alternative to the shared database.
+
+02:02.970 --> 02:09.210
+Better is the database better service better where each micro services data can also be accessed by
+
+02:09.210 --> 02:11.480
+other micro services.
+
+02:11.600 --> 02:18.950
+Although the pattern is referred to as database service rather than a completely seperate database for
+
+02:18.950 --> 02:25.880
+each service it is generally more practical for each micro service to access a separate database schema
+
+02:26.030 --> 02:30.600
+or table to avoid having to manage a large number of databases.
+
+02:31.980 --> 02:36.740
+The database service better provides some interesting advantages.
+
+02:37.810 --> 02:45.270
+Different services can use different data may Logies depending on which best suits their requirements.
+
+02:46.130 --> 02:53.120
+For example one service could store data in an obscure database waste another would store its data in
+
+02:53.120 --> 03:00.980
+an Oracle database and then other service could store as data in a search engine based database such
+
+03:00.980 --> 03:09.320
+as elastic search or soulish database pre-service better promotes decoupling between services and helps
+
+03:09.320 --> 03:17.840
+prevent the development and performance issues caused by using a shared database however it also comes
+
+03:17.840 --> 03:19.720
+with some disadvantages.
+
+03:19.730 --> 03:26.720
+The most notable one is that it is harder to implement queries where data contained across multiple
+
+03:26.720 --> 03:34.710
+micro services Diskin still be achieved in different ways such as API composition or through a form
+
+03:34.860 --> 03:40.150
+of events or both of which we'll be discussing in the next lectures.
+
+03:40.210 --> 03:48.280
+However they still require more effort than a simple query would in the shared database better and other
+
+03:48.280 --> 03:54.630
+disadvantage worth mentioning is that there will now be more database system and thing in the system.
+
+03:54.700 --> 03:56.940
+Which of course requires more work.

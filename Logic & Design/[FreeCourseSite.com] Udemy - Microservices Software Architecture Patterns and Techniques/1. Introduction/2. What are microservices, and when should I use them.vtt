@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00.820 --> 00:07.600
+This lecture will be an introduction to Microcircuits is where we'll be explaining what the micro service
+
+00:07.630 --> 00:15.580
+architecture is and its advantages and drawbacks which would help us decide which scenario this architecture
+
+00:15.700 --> 00:16.640
+is applicable.
+
+00:17.880 --> 00:24.060
+A micro service architecture is based on services and their intercommunication.
+
+00:24.110 --> 00:32.260
+So in other words the system is structured as a collection of interconnected services.
+
+00:32.260 --> 00:40.390
+The services are fine grained which means they each perform a specific function or task and they are
+
+00:40.390 --> 00:42.980
+lightweight.
+
+00:43.130 --> 00:50.730
+We'd be talking about how to split a system into different micro services in another lecture for the
+
+00:50.730 --> 00:52.770
+purpose of this introduction.
+
+00:52.860 --> 00:59.310
+It's important to note that the services are loosely coupled and that a service logically represents
+
+00:59.530 --> 01:05.660
+a business activity with a specified outcome and is self-contained.
+
+01:05.710 --> 01:11.920
+It is a black box for its consumers which shouldn't need to know anything about its own inner workings
+
+01:12.250 --> 01:18.010
+and it may consist or make use of other underlying services.
+
+01:18.030 --> 01:24.390
+I've had a diagram here which illustrates how different Microcircuits is making up the entire system
+
+01:24.720 --> 01:33.720
+communicate together and provide functionality to the UI the advantages of micro services are that since
+
+01:33.720 --> 01:40.830
+services are loose the cup and there is no coupling between components which improves modularity making
+
+01:40.920 --> 01:49.530
+them easier to develop understand and test it promotes parallel development as different Microcircuits
+
+01:49.530 --> 01:56.180
+services can be developed by different teams using different technologies and Microcircuits architecture
+
+01:56.450 --> 01:58.670
+also promotes scalability.
+
+01:58.670 --> 02:04.560
+Although if not develop carefully it is still possible of course to develop a system with Microsoft
+
+02:04.570 --> 02:06.870
+Airbus's that does not scale well.
+
+02:09.150 --> 02:16.860
+The drawbacks of a micro service architecture are that the infrastructure costs are usually higher due
+
+02:16.860 --> 02:24.380
+to the need to support a higher number of services and the interprocess communication integration.
+
+02:24.380 --> 02:30.380
+This thing also becomes more complex because of the number of micro services that need to be tested
+
+02:30.390 --> 02:39.300
+together service management and deployment also becomes more complex and we must be careful to avoid
+
+02:39.540 --> 02:41.350
+the National Service Antipater.
+
+02:41.820 --> 02:47.230
+And then a service is an Antipater where a service is too fine grained.
+
+02:47.350 --> 02:54.520
+In this case the service is overhead such as the interprocess communication overhead utilization costs
+
+02:54.640 --> 02:59.980
+Cesena outweighs its utility and in such cases it would make sense.
+
+03:00.040 --> 03:07.310
+The package dysfunctionality into a software library or combine it into other services and other things
+
+03:07.310 --> 03:14.160
+to note is that graphical user interface based applications may not be suitable candidates for a micro
+
+03:14.160 --> 03:20.100
+service architecture especially of these require a lot of data exchange between services.

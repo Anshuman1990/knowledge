@@ -1,0 +1,85 @@
+WEBVTT
+
+00:01.470 --> 00:08.340
+In this lecture you will be learning about logging techniques to improve the effectiveness of our logging
+
+00:09.090 --> 00:15.690
+and ensuring that navigating logs is a manageable task and that we have sufficient detail to extract
+
+00:15.810 --> 00:20.640
+useful information in a Microcircuits architecture.
+
+00:20.640 --> 00:27.780
+A single request can end up going through many micro services if we are going through the logs of our
+
+00:27.780 --> 00:32.970
+micro service and find that some data was incorrectly processed.
+
+00:32.970 --> 00:39.960
+It is likely that you would need to trace the request to the microscope that sent it and perhaps even
+
+00:39.960 --> 00:47.780
+to other micro services further up the chain would just request payload and time information in hand
+
+00:48.310 --> 00:53.680
+although it may be possible to track the originating requests to other micro services.
+
+00:53.740 --> 01:00.400
+This would be very time consuming to solve this issue and to be able to trace the parts of our requests
+
+01:00.640 --> 01:06.100
+across micro services effectively to make use of a globally unique identifier.
+
+01:06.160 --> 01:15.720
+Also known as a good as the name implies a good a unique random value which we assign as a request identifier
+
+01:15.940 --> 01:23.710
+at the origin of the request as it enters our system as shown in the diagram would then include this
+
+01:23.720 --> 01:30.440
+request identifier field when sending related requests to micro services to be able to link them to
+
+01:30.560 --> 01:39.570
+each other easily this request identifier is also included in any logging activity so that we are able
+
+01:39.570 --> 01:47.950
+to trace the actions related to a particular request across micro services this request identifier will
+
+01:47.950 --> 01:54.670
+also be useful to us in co-creating and to end performance of how long it took to process a request
+
+01:54.850 --> 02:02.930
+in our system and to help identify what the initial bottlenecks although using a request identifier
+
+02:03.140 --> 02:09.350
+solves the problem of relating different looks to get there navigating through locked files is still
+
+02:09.350 --> 02:15.860
+a tedious task due to the number of Microcircuits instances located on different servers each with their
+
+02:15.860 --> 02:21.560
+separate log files to be able to go through logs effectively.
+
+02:21.560 --> 02:28.300
+We need to use some form of log aggregation technology where we can view and query the logs for all
+
+02:28.310 --> 02:30.400
+micro services in a single view.
+
+02:31.200 --> 02:38.760
+Technologies that allow this functionality include the elastics search locks dish Iban or Steck Splunk
+
+02:39.300 --> 02:47.960
+and AWOS cloud Dortch using a combination of request identifiers and log aggregation techniques.
+
+02:48.000 --> 02:56.410
+It is much easier to treat requests in or micro service system many log aggregation technologies also
+
+02:56.410 --> 03:03.680
+allow us to set up monitoring alerts which are useful to track certain events such as network errors.
+
+03:03.710 --> 03:10.190
+They may also allow the user to create dashboards illustrating graphs with data obtained from the logs
+
+03:10.520 --> 03:13.790
+that can be used to show statistics and metrics.
