@@ -1,0 +1,291 @@
+1
+00:00:00,840 --> 00:00:08,220
+Hello and welcome back in the previews VDU we created that connection through Pudi using S-sh to connect
+
+2
+00:00:08,220 --> 00:00:10,280
+to our virtual machine.
+
+3
+00:00:10,350 --> 00:00:12,740
+We are very connected here as you can see.
+
+4
+00:00:12,810 --> 00:00:18,570
+And now what we're going to do is we're going to use Duckery if you have never used it before.
+
+5
+00:00:18,570 --> 00:00:21,890
+Don't worry we're going to learn a little bit of daquiri here.
+
+6
+00:00:22,140 --> 00:00:29,820
+And you must know that doctor is only available for certain platforms on Linux.
+
+7
+00:00:29,850 --> 00:00:35,580
+So in this case I'm going to look for a Santo's doctor for Central because we're going to start looking
+
+8
+00:00:35,580 --> 00:00:38,490
+for the documentation.
+
+9
+00:00:38,490 --> 00:00:41,460
+Something pretty important please before doing it.
+
+10
+00:00:41,460 --> 00:00:44,550
+Make sure that you can reach Internet from your machine.
+
+11
+00:00:44,570 --> 00:00:50,660
+So if you type ping Google dot com you should have announced are like this.
+
+12
+00:00:50,970 --> 00:00:51,680
+OK.
+
+13
+00:00:51,870 --> 00:00:56,550
+So where are you going to look for dear's resort which is the first one.
+
+14
+00:00:56,910 --> 00:01:04,020
+And as you can see here on the left side these are the steps to install darker on the Santo's or DVN
+
+15
+00:01:04,050 --> 00:01:10,010
+or Fedora or Jew or whatever you have use to create a virtual machine.
+
+16
+00:01:10,200 --> 00:01:17,070
+And we're going to install this as you can see here we're just going to copy this command and we're
+
+17
+00:01:17,070 --> 00:01:18,570
+going to pay sitting here.
+
+18
+00:01:18,750 --> 00:01:21,220
+Oh how you pays in Pudi.
+
+19
+00:01:21,300 --> 00:01:22,340
+That's a good question.
+
+20
+00:01:22,350 --> 00:01:26,470
+You pays using the right click button on your mouse.
+
+21
+00:01:26,580 --> 00:01:31,960
+So you click your right button on your mouse and then you can paste it.
+
+22
+00:01:32,090 --> 00:01:32,950
+Cool.
+
+23
+00:01:32,970 --> 00:01:36,280
+So what we're going to do here is that we're going to pasted.
+
+24
+00:01:36,750 --> 00:01:41,300
+We hit enter and then we give the password of 1 2 3 4.
+
+25
+00:01:41,310 --> 00:01:49,050
+After doing this as you can see there is going to be as crane that is going to show you all that installation
+
+26
+00:01:49,140 --> 00:01:51,250
+for these packages.
+
+27
+00:01:51,420 --> 00:01:53,570
+So let's wait until this finishes.
+
+28
+00:01:54,700 --> 00:01:55,710
+Great.
+
+29
+00:01:55,820 --> 00:01:57,750
+The insulation already finished.
+
+30
+00:01:57,750 --> 00:02:00,680
+So where you going to be following the guide.
+
+31
+00:02:00,750 --> 00:02:05,670
+Where are you going to copy and paste these command which is going to as you can see here it's going
+
+32
+00:02:05,670 --> 00:02:08,270
+to out that repository for St. Louis.
+
+33
+00:02:08,430 --> 00:02:15,230
+Please remember that these steps are for St. Joe's Only if you are using in-order distribution.
+
+34
+00:02:15,330 --> 00:02:19,660
+Please read the Debian Fedora Ubuntu documentation.
+
+35
+00:02:19,960 --> 00:02:25,680
+OK so the next thing that we're going to do is that we're going to install the repository as simple
+
+36
+00:02:25,710 --> 00:02:26,590
+as this.
+
+37
+00:02:26,770 --> 00:02:29,680
+Jim in Soldat Kurt dasht CD.
+
+38
+00:02:29,940 --> 00:02:31,320
+That's it.
+
+39
+00:02:31,320 --> 00:02:33,710
+So this is going to ask for approval.
+
+40
+00:02:33,710 --> 00:02:35,570
+Where you gonna say yes here.
+
+41
+00:02:35,850 --> 00:02:36,560
+Click here.
+
+42
+00:02:36,600 --> 00:02:38,250
+Enter.
+
+43
+00:02:38,590 --> 00:02:42,600
+And then we just need to wait until this installation finishes.
+
+44
+00:02:43,240 --> 00:02:45,850
+It's going to ask for approval again to you.
+
+45
+00:02:45,880 --> 00:02:46,790
+Yes.
+
+46
+00:02:48,130 --> 00:02:50,830
+And then we wait until this finishes.
+
+47
+00:02:50,830 --> 00:02:52,270
+It may take some minutes.
+
+48
+00:02:52,280 --> 00:02:57,220
+Don't worry if the screen gets stuck for some seconds it's normal.
+
+49
+00:02:57,400 --> 00:02:57,890
+OK.
+
+50
+00:02:58,000 --> 00:03:02,680
+As you can see here Dean Salesian already finished and we are ready to go.
+
+51
+00:03:02,890 --> 00:03:07,970
+So after this we're done with this guy we can just start the service.
+
+52
+00:03:07,970 --> 00:03:13,990
+As you can see here we're just going to copy this command and we're going to start to dock her servies.
+
+53
+00:03:14,030 --> 00:03:17,780
+Now we're going to naval the darkhorse service at boot.
+
+54
+00:03:17,780 --> 00:03:24,010
+It means that whenever our machine reboots the car service is going to start with our system.
+
+55
+00:03:24,020 --> 00:03:31,400
+So for doing days we type pseudo system CTO in naval docker.
+
+56
+00:03:31,810 --> 00:03:32,490
+OK.
+
+57
+00:03:32,510 --> 00:03:33,310
+Nice.
+
+58
+00:03:33,410 --> 00:03:40,390
+And now if you want to test your installation you do a duck or Piers and you have a natural heater.
+
+59
+00:03:40,390 --> 00:03:42,220
+So how do you fix these errors.
+
+60
+00:03:42,250 --> 00:03:43,790
+This is pretty simple.
+
+61
+00:03:43,810 --> 00:03:52,940
+We're going to do a Suda user mode dodge a G and then we say Dr. Jenkins we don't enter.
+
+62
+00:03:53,280 --> 00:03:55,010
+And what do we do here.
+
+63
+00:03:55,210 --> 00:04:01,540
+User Mode is Lillenas command that allows us to modify an existing user as you can see here.
+
+64
+00:04:01,550 --> 00:04:03,960
+We're using the user Jenkyns.
+
+65
+00:04:04,120 --> 00:04:13,780
+So we are telling here to Linux this whereas say inhaling X plays at the user Jenkin's to dig group
+
+66
+00:04:13,990 --> 00:04:15,080
+daquiri.
+
+67
+00:04:15,370 --> 00:04:17,560
+So that's what we have done.
+
+68
+00:04:17,650 --> 00:04:24,070
+And if we tap Dr. Pierce we still have that error and that's because we need to look out and then look
+
+69
+00:04:24,070 --> 00:04:25,690
+back in.
+
+70
+00:04:25,690 --> 00:04:31,250
+So we're going to look out of here and we're going to open up our decision again.
+
+71
+00:04:31,290 --> 00:04:38,170
+We click on load we can open then we have the user Jenkin's that allowed to report and we try again
+
+72
+00:04:38,420 --> 00:04:40,570
+type in darker and nice.
+
+73
+00:04:40,570 --> 00:04:42,310
+This is where it can like a term.

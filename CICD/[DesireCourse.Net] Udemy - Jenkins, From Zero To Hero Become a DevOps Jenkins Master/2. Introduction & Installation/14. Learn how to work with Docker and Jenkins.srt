@@ -1,0 +1,171 @@
+1
+00:00:00,480 --> 00:00:01,140
+Ok cool.
+
+2
+00:00:01,150 --> 00:00:06,380
+So now that we have configured everything in that we're using a better interface.
+
+3
+00:00:06,420 --> 00:00:12,940
+We are going to start learning how to use Jenkin's remember that if you do an L as you're going to see
+
+4
+00:00:12,960 --> 00:00:16,970
+these folder which is jinking Zeta we created that for before.
+
+5
+00:00:16,980 --> 00:00:23,360
+So just go ahead and change directory to that folder and if you need LS you're going to see the doctor
+
+6
+00:00:23,360 --> 00:00:29,790
+compose for you are going to use these docs recomposed file a lot because remember that this file contains
+
+7
+00:00:29,790 --> 00:00:33,150
+the definitions for the service itself.
+
+8
+00:00:33,150 --> 00:00:37,980
+So if we go to the browser now and we reload we have the service up and running.
+
+9
+00:00:38,130 --> 00:00:45,180
+But what happens if we want to stop the service or if we want to reboot or machine then to stop the
+
+10
+00:00:45,180 --> 00:00:48,800
+service we need to do at Duckery compose stop.
+
+11
+00:00:49,050 --> 00:00:51,880
+And this is going to stop the service itself.
+
+12
+00:00:52,020 --> 00:00:56,700
+So if we reload here the service is no longer alive.
+
+13
+00:00:56,820 --> 00:01:00,680
+If we do a duck croupiers you see that there is no container running.
+
+14
+00:01:00,690 --> 00:01:03,180
+Therefore you have a network here.
+
+15
+00:01:03,420 --> 00:01:10,650
+So if you want to start your service you do at daquiri compose start and then you do a ducker appears
+
+16
+00:01:10,650 --> 00:01:14,970
+and you see that the container is actually up and running.
+
+17
+00:01:14,970 --> 00:01:20,820
+So if I were reloading here it takes some seconds for Jenkins to completely Buddh up.
+
+18
+00:01:20,820 --> 00:01:22,380
+So that's how you work with this.
+
+19
+00:01:22,380 --> 00:01:28,950
+Maybe if you want to use service you are going to deduct or compose maybe a restart Jenkin's which is
+
+20
+00:01:28,950 --> 00:01:31,420
+the name of the service that you want to restart.
+
+21
+00:01:31,440 --> 00:01:38,010
+This is going to stop it and then it's going to start to go back and what happens if you want to completely
+
+22
+00:01:38,010 --> 00:01:40,120
+delete your entire service.
+
+23
+00:01:40,260 --> 00:01:40,590
+So.
+
+24
+00:01:40,610 --> 00:01:41,480
+OK.
+
+25
+00:01:41,750 --> 00:01:48,430
+You are going to do a daquiri composed down and this down is going to delete everything related to disserve
+
+26
+00:01:48,460 --> 00:01:50,700
+is that it's not going to delete.
+
+27
+00:01:50,700 --> 00:01:56,820
+Well we say from the volumes do you remember divulgence if we take color darker compose file we see
+
+28
+00:01:56,820 --> 00:02:00,430
+that indecorum pad we have a volume which is this one.
+
+29
+00:02:00,480 --> 00:02:06,630
+And if we do analysis here we're going to see all of the files that belong to Jenkyns.
+
+30
+00:02:06,660 --> 00:02:14,220
+So if we recreate that this service this is going to look for the files in this folder and then is going
+
+31
+00:02:14,220 --> 00:02:17,330
+to map those files into that container itself.
+
+32
+00:02:17,340 --> 00:02:24,130
+So let's do this joker composed Abdul-Hadi creates the service or recreates the services.
+
+33
+00:02:24,210 --> 00:02:31,290
+So if we do that Dr. Pierce does services up and running so let's keep the browser and see what happens.
+
+34
+00:02:31,530 --> 00:02:37,590
+So as you can see Jenkins is just getting ready to work and we should have all the configuration that
+
+35
+00:02:37,620 --> 00:02:44,450
+we have already done like installing plugins or configuring the admin password and all of that stuff.
+
+36
+00:02:44,460 --> 00:02:51,830
+So these videos for those guys who don't know how to use Dharker or for people who have never used doctor
+
+37
+00:02:51,910 --> 00:02:54,770
+before and don't know how to use Dr. compote.
+
+38
+00:02:54,780 --> 00:02:55,700
+So that's pretty simple.
+
+39
+00:02:55,700 --> 00:03:02,160
+Does the doctor compose up to create a service or is recreated a stop for a stop in it start for it
+
+40
+00:03:02,160 --> 00:03:05,320
+start to narrow and down for delay in it.
+
+41
+00:03:05,520 --> 00:03:06,570
+So this is pretty cool.
+
+42
+00:03:06,570 --> 00:03:11,600
+Our Jenkin's services are really ready to accept connections.
+
+43
+00:03:11,610 --> 00:03:15,760
+So we kind of start playing around with this so see in the next lesson.

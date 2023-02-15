@@ -1,0 +1,435 @@
+1
+00:00:00,520 --> 00:00:02,680
+Hello and welcome back.
+
+2
+00:00:02,860 --> 00:00:07,300
+The first thing that we're going to do is we're going to create a directory which is going to be called
+
+3
+00:00:07,300 --> 00:00:08,100
+Jenkyns.
+
+4
+00:00:08,140 --> 00:00:10,490
+You can create it whatever you want.
+
+5
+00:00:10,570 --> 00:00:17,170
+In this case the path is as large hum Jenkins and Jenkin's as you can see here.
+
+6
+00:00:17,170 --> 00:00:19,670
+I just created a directory here.
+
+7
+00:00:19,810 --> 00:00:27,550
+If a journalist here is the directory in befool pad for a directory is that current directory Pazz this
+
+8
+00:00:27,570 --> 00:00:28,370
+pad.
+
+9
+00:00:28,630 --> 00:00:35,800
+So let me just rename this directory because you may be confused so let's rename it.
+
+10
+00:00:36,010 --> 00:00:40,210
+And we're going to call that Jenkin's data for example.
+
+11
+00:00:40,210 --> 00:00:48,360
+So the full path for Jenkyns data is going to be less home Jenkyns and Jenkin's data perfect.
+
+12
+00:00:48,360 --> 00:00:53,710
+These directories empty as you can see because we haven't created anything but we're going to create
+
+13
+00:00:53,710 --> 00:00:54,440
+things.
+
+14
+00:00:54,460 --> 00:00:55,060
+OK.
+
+15
+00:00:55,150 --> 00:00:56,620
+We created the directory.
+
+16
+00:00:56,620 --> 00:00:59,990
+Now we're going to move into that directory.
+
+17
+00:01:00,370 --> 00:01:05,690
+We don't have anything here but we're going to create a sample daquiri compose file.
+
+18
+00:01:05,950 --> 00:01:11,920
+So we're Type VII docker compose that yemo.
+
+19
+00:01:11,920 --> 00:01:12,940
+This is important.
+
+20
+00:01:12,940 --> 00:01:16,720
+This name is pretty important so please keep it like this.
+
+21
+00:01:16,870 --> 00:01:20,040
+And vi is a text editor for Linux.
+
+22
+00:01:20,540 --> 00:01:22,460
+So we're going to hit enter.
+
+23
+00:01:22,630 --> 00:01:25,980
+And then we're going to start typing.
+
+24
+00:01:26,000 --> 00:01:33,610
+Did Doc compose fire before doing a duck recomposed file is they can the script is a definition.
+
+25
+00:01:33,730 --> 00:01:37,970
+So here we're going to define which services we want to spin.
+
+26
+00:01:37,990 --> 00:01:41,650
+So in this case for now we want to spin a Jenkin's server.
+
+27
+00:01:41,800 --> 00:01:44,910
+So we're going to start with this file.
+
+28
+00:01:44,980 --> 00:01:49,340
+So we say Version 3 that's the current version of Duguid composed don't worry.
+
+29
+00:01:49,600 --> 00:01:51,320
+And now we say it services.
+
+30
+00:01:51,550 --> 00:01:58,390
+So in services we're going to define our Jenkin's server and this denken server will have some properties
+
+31
+00:01:58,900 --> 00:02:06,990
+so we can define the container name container name and where are you going to call it Jenkyns simple.
+
+32
+00:02:07,000 --> 00:02:08,690
+Now we're going to define the image.
+
+33
+00:02:08,860 --> 00:02:14,100
+So is a image and then the name that is going to go here.
+
+34
+00:02:15,100 --> 00:02:18,080
+Is the name that we downloaded in the preview video.
+
+35
+00:02:18,430 --> 00:02:20,610
+So we type darker image.
+
+36
+00:02:20,920 --> 00:02:22,920
+And here we have the name.
+
+37
+00:02:22,920 --> 00:02:25,250
+So we're going to copy this name.
+
+38
+00:02:25,320 --> 00:02:28,380
+Are going to open up again or Dr. composed file.
+
+39
+00:02:28,450 --> 00:02:30,390
+And we're going to pay these in here.
+
+40
+00:02:30,520 --> 00:02:31,010
+Cool.
+
+41
+00:02:31,090 --> 00:02:33,220
+Oh a pretty quick tap.
+
+42
+00:02:33,280 --> 00:02:36,970
+If you don't know how to exit of this crane this is pretty simple.
+
+43
+00:02:37,000 --> 00:02:47,260
+You hit escape then you head shift and the colon key then you press w in Q Which means right and quit.
+
+44
+00:02:47,470 --> 00:02:51,920
+So we hit enter and you are really quite cool.
+
+45
+00:02:52,030 --> 00:02:56,820
+So OK we're ready to find a container name and image Waddle's zoo in it.
+
+46
+00:02:56,830 --> 00:03:00,490
+I'm going to leave you does Tim played here and this Tom played.
+
+47
+00:03:00,550 --> 00:03:03,130
+You can actually just copy and paste it if you run right.
+
+48
+00:03:03,130 --> 00:03:05,430
+Use it or you can manually type.
+
+49
+00:03:05,470 --> 00:03:06,630
+There is no problem.
+
+50
+00:03:06,820 --> 00:03:10,590
+So we're going to find the poor it's what our good port.
+
+51
+00:03:10,600 --> 00:03:17,530
+So we're going to say port and we define an A right of port that we're going to say that we want to
+
+52
+00:03:17,530 --> 00:03:27,400
+expose the port of Jenkin's using the port 80 on our machine and we're going to map that port internally
+
+53
+00:03:27,400 --> 00:03:30,300
+to the container on port 80.
+
+54
+00:03:30,310 --> 00:03:34,450
+Don't worry we will take a look on this later.
+
+55
+00:03:34,450 --> 00:03:35,640
+What else do we need.
+
+56
+00:03:35,680 --> 00:03:38,210
+We need to Baalim what is a Baalim.
+
+57
+00:03:38,260 --> 00:03:38,720
+OK.
+
+58
+00:03:38,740 --> 00:03:45,790
+You must know that in Dharker when you create a container when you use Pin-Up your service all the data
+
+59
+00:03:45,790 --> 00:03:53,680
+which is within the container is going to be destroyed if you don't save that data into a volume.
+
+60
+00:03:53,980 --> 00:04:02,110
+So we say volumes here in this case and we're going to say OK we want to create a folder which is going
+
+61
+00:04:02,110 --> 00:04:04,280
+to be called Jenkin's folders.
+
+62
+00:04:04,280 --> 00:04:06,600
+So let's use the coring part for now.
+
+63
+00:04:06,650 --> 00:04:11,360
+Are you going to say PWT which means PWT a career path.
+
+64
+00:04:11,530 --> 00:04:18,340
+And we're going to create a folder which is going to be called Jenkin's home for example.
+
+65
+00:04:18,520 --> 00:04:21,200
+And we are going to map these for other.
+
+66
+00:04:21,330 --> 00:04:21,660
+OK.
+
+67
+00:04:21,670 --> 00:04:26,040
+First we need to create this folder in our machines already in a copy of this
+
+68
+00:04:29,720 --> 00:04:33,340
+and are you going to go out of Bam and we're going to create a directory here.
+
+69
+00:04:33,400 --> 00:04:39,140
+So we click make your home make sure you don't put the lash make Jenkin's hum.
+
+70
+00:04:39,530 --> 00:04:40,580
+Hit enter.
+
+71
+00:04:40,720 --> 00:04:41,740
+Any of you do.
+
+72
+00:04:41,820 --> 00:04:49,560
+Unless you should see Jenkin's home folder at the same level of the daquiri compose file.
+
+73
+00:04:49,810 --> 00:04:57,550
+So OK the full pop Ferdie's is the PWB which can be represented with this variable.
+
+74
+00:04:57,610 --> 00:05:02,250
+You do an EC2 loops.
+
+75
+00:05:02,510 --> 00:05:10,410
+So this is the correct path plus your four letter to folder that you have just created and this is the
+
+76
+00:05:10,410 --> 00:05:12,360
+full path as you can see.
+
+77
+00:05:12,440 --> 00:05:15,700
+OK so where are you going to get back to work Dharker compose file.
+
+78
+00:05:16,040 --> 00:05:21,010
+And we are already defined as this is the host Baalim.
+
+79
+00:05:21,020 --> 00:05:23,930
+Now we're going to map it to a container.
+
+80
+00:05:23,940 --> 00:05:28,280
+So how do we do this within the container.
+
+81
+00:05:28,310 --> 00:05:33,370
+The darker image eases these folder to his tour of the file.
+
+82
+00:05:33,380 --> 00:05:37,210
+So where are you going to copy the location where you put a calling here.
+
+83
+00:05:37,370 --> 00:05:39,360
+And then we paste the location.
+
+84
+00:05:39,440 --> 00:05:46,570
+So we're saying OK Doctor please whatever you are right here which is going to be all of the files for
+
+85
+00:05:46,580 --> 00:05:47,160
+Jenkyns.
+
+86
+00:05:47,170 --> 00:05:52,850
+Please save those files in the directory that I have just created.
+
+87
+00:05:52,940 --> 00:05:53,690
+Cool.
+
+88
+00:05:53,870 --> 00:05:55,610
+And now we need to define a network.
+
+89
+00:05:55,640 --> 00:06:03,840
+So we say we one this to be in the network that we haven't created the network net.
+
+90
+00:06:04,010 --> 00:06:12,080
+So let's go here in the same text file at the same level of services where are going to create a section
+
+91
+00:06:12,080 --> 00:06:15,570
+which is going to be called networks networks.
+
+92
+00:06:15,830 --> 00:06:19,740
+We put a call on an underneath of these.
+
+93
+00:06:19,760 --> 00:06:23,220
+We're going to create a net network.
+
+94
+00:06:23,220 --> 00:06:30,080
+So OK we're saying Please Doctor create a network using these instruction which is going to be called
+
+95
+00:06:30,170 --> 00:06:34,010
+net and then we're going to use that here.
+
+96
+00:06:34,070 --> 00:06:40,490
+And where are you going to include the Jenkin's server or the Jenkyns service within the network.
+
+97
+00:06:40,520 --> 00:06:41,630
+So that's pretty cool.
+
+98
+00:06:41,630 --> 00:06:43,680
+I think this is everything we need.
+
+99
+00:06:43,790 --> 00:06:47,120
+We're going to save the file and we are done.
+
+100
+00:06:47,120 --> 00:06:50,530
+So let's recap what we just did.
+
+101
+00:06:50,660 --> 00:06:57,050
+And if we do that cat in the duck recomposed GMO file We're going to see that we're using a version
+
+102
+00:06:57,050 --> 00:06:58,980
+3 of Dr. compose.
+
+103
+00:06:59,000 --> 00:07:00,590
+We have defined a service.
+
+104
+00:07:00,800 --> 00:07:06,170
+Its name is Jenkins they contain our name is going to be Jenkin's the image that it's going to use as
+
+105
+00:07:06,170 --> 00:07:08,640
+the Jenkin's slash Jenkins image.
+
+106
+00:07:08,690 --> 00:07:11,200
+It's going to export the port 80 80.
+
+107
+00:07:11,330 --> 00:07:15,940
+It's going to save all the information in these folders that we created.
+
+108
+00:07:16,310 --> 00:07:24,470
+And this is going to bind the service into an Network which is called Net Envy's network is being created
+
+109
+00:07:24,470 --> 00:07:25,170
+here.

@@ -1,0 +1,259 @@
+1
+00:00:00,930 --> 00:00:01,770
+Ok cool.
+
+2
+00:00:01,770 --> 00:00:06,090
+So now we have our mission ready and we're going to log in.
+
+3
+00:00:06,090 --> 00:00:12,480
+So we're going to use the user Jenkin's that we created and we're going to give the powers were 1 2
+
+4
+00:00:12,480 --> 00:00:14,440
+3 4 that we created.
+
+5
+00:00:14,670 --> 00:00:15,450
+Ok cool.
+
+6
+00:00:15,450 --> 00:00:17,370
+So here we are now.
+
+7
+00:00:17,520 --> 00:00:20,340
+What we want to know is the IP of this machine.
+
+8
+00:00:20,400 --> 00:00:27,760
+So we type IP a hit enter and then you're going to see the IP address right here.
+
+9
+00:00:27,840 --> 00:00:29,800
+This is my IP address.
+
+10
+00:00:29,970 --> 00:00:39,300
+So you are going to probably have an IP address like 1 9 2 1 6 8 something that something.
+
+11
+00:00:39,480 --> 00:00:41,750
+But don't worry you just use that IP.
+
+12
+00:00:42,090 --> 00:00:48,120
+So now that we have these IP addresses we want to connect to these IP using the sage but how do we do
+
+13
+00:00:48,120 --> 00:00:49,890
+it easy.
+
+14
+00:00:49,890 --> 00:00:54,290
+We go to Google and then we're going to look for puti here.
+
+15
+00:00:54,300 --> 00:00:58,320
+Beauty is a client for S-sh on Windows.
+
+16
+00:00:58,320 --> 00:01:07,100
+So we just go here we click here and then we should be using 64 bit as I told you before.
+
+17
+00:01:07,110 --> 00:01:08,710
+So we're going to download this.
+
+18
+00:01:09,060 --> 00:01:10,470
+And that's pretty simple.
+
+19
+00:01:10,470 --> 00:01:15,950
+We wait until the download finishes and then we're just going to go here.
+
+20
+00:01:16,080 --> 00:01:18,670
+Are you going to click on this.
+
+21
+00:01:18,690 --> 00:01:20,020
+We're going to click next.
+
+22
+00:01:20,040 --> 00:01:26,550
+I already have these installs so you should click on next but I'm going to click on repeller and next
+
+23
+00:01:26,550 --> 00:01:30,840
+next next and this is going to do all the work.
+
+24
+00:01:30,870 --> 00:01:36,750
+So cool once puti is installed you can see that I already create a shirt here but you can look for it
+
+25
+00:01:36,750 --> 00:01:38,030
+on your applications.
+
+26
+00:01:38,030 --> 00:01:39,140
+Or you type pretty.
+
+27
+00:01:39,330 --> 00:01:40,420
+And there you go.
+
+28
+00:01:40,620 --> 00:01:47,560
+So now what we're going to do is we're going to graph the IP address and we're going to create a connection.
+
+29
+00:01:47,640 --> 00:01:53,340
+So OK the first thing that we're going to do is that you are going to probably want to have the appearance
+
+30
+00:01:53,550 --> 00:01:55,320
+to increase the font size.
+
+31
+00:01:55,410 --> 00:01:59,670
+So you go here into window perience and click on change.
+
+32
+00:01:59,700 --> 00:02:03,410
+Now you can choose the size that you want the fun that you want.
+
+33
+00:02:03,480 --> 00:02:09,800
+I'm going to choose a 12 size I'm going to click OK then I'll be back to the session.
+
+34
+00:02:11,260 --> 00:02:15,190
+And I will type the IP address that is in here the left.
+
+35
+00:02:15,370 --> 00:02:23,540
+So that is 10 dot 130 thirty nine DOD 2 5 4.
+
+36
+00:02:23,650 --> 00:02:24,240
+Cool.
+
+37
+00:02:24,490 --> 00:02:26,980
+So now I will give in the safe session.
+
+38
+00:02:27,040 --> 00:02:33,450
+I will give you the name like Jenkin's machine or whatever you want.
+
+39
+00:02:33,480 --> 00:02:35,750
+And then I will click on safe.
+
+40
+00:02:35,760 --> 00:02:36,370
+Cool.
+
+41
+00:02:36,480 --> 00:02:40,660
+So now I can just closed and I can open it again.
+
+42
+00:02:41,840 --> 00:02:45,640
+And as you can see here here is my connection.
+
+43
+00:02:46,040 --> 00:02:50,760
+Then if I just want a loaded I just click on this and I click on the button.
+
+44
+00:02:50,990 --> 00:02:57,470
+And as you can see here it appears the IP and appearance it appears are where it conflagration.
+
+45
+00:02:57,740 --> 00:03:03,640
+So once we are here we click open and then we're going to log in as these are Jenkyns.
+
+46
+00:03:03,680 --> 00:03:08,540
+Using 1 2 3 4 cool.
+
+47
+00:03:08,600 --> 00:03:12,010
+So we are really logged in into this machine.
+
+48
+00:03:12,080 --> 00:03:14,580
+So what do we do here.
+
+49
+00:03:14,600 --> 00:03:15,630
+That's pretty simple.
+
+50
+00:03:15,650 --> 00:03:23,940
+We connected to there's a machine in here from Pootie using as a sage and why you may be asking.
+
+51
+00:03:24,140 --> 00:03:25,860
+And that's pretty simple.
+
+52
+00:03:25,860 --> 00:03:34,190
+It's because managing things from Pudi is actually pretty simple and it's even easier done doing it
+
+53
+00:03:34,190 --> 00:03:37,430
+from the virtual box window.
+
+54
+00:03:37,610 --> 00:03:41,060
+So we're going to keep this machine powered on.
+
+55
+00:03:41,060 --> 00:03:46,440
+So we're going to minimizers And OK we are as you can see in the same machine but now we're connected
+
+56
+00:03:46,460 --> 00:03:48,370
+through the which is pretty cool.
+
+57
+00:03:49,200 --> 00:03:55,640
+So now if you type IP A You are going to see the exact same IP address that you saw before.
+
+58
+00:03:55,830 --> 00:04:00,240
+So OK you already know how to connect to your machine using Pootie.
+
+59
+00:04:00,240 --> 00:04:01,720
+So let's do it again.
+
+60
+00:04:02,040 --> 00:04:07,160
+If you want to close or you just close it open up booty after you are here.
+
+61
+00:04:07,170 --> 00:04:11,910
+What you are going to do is that you're going to click on your Jenkin's machine state where you can
+
+62
+00:04:11,920 --> 00:04:17,680
+actually download then click Open logon as the user Jenkyns give it a password.
+
+63
+00:04:18,120 --> 00:04:21,220
+Please remember that you need it.
+
+64
+00:04:21,270 --> 00:04:27,270
+Your machine needs to be powered on before doing this because if it's not powered on then you're going
+
+65
+00:04:27,270 --> 00:04:28,710
+to have some errors.

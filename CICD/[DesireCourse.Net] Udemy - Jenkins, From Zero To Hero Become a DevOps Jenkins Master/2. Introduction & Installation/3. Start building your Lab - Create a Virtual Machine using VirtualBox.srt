@@ -1,0 +1,67 @@
+1
+00:00:00,150 --> 00:00:06,230
+Hello and welcome back here we're going to take a look how are we going to build our love for a tree.
+
+2
+00:00:06,240 --> 00:00:12,010
+So as you can see here I'm using Windows and probably you are going to be using Windows.
+
+3
+00:00:12,060 --> 00:00:12,290
+So.
+
+4
+00:00:12,300 --> 00:00:12,730
+OK.
+
+5
+00:00:12,750 --> 00:00:16,900
+The first thing that we're going to do we're going to take this laboratory using a vertical box.
+
+6
+00:00:16,920 --> 00:00:21,750
+So if you have vertical bugs go ahead to Verd for bugs that work and install it for Windows.
+
+7
+00:00:21,750 --> 00:00:23,540
+It's pretty simple to just download it.
+
+8
+00:00:23,550 --> 00:00:27,710
+Click next next next and then you have virtual box installed.
+
+9
+00:00:27,720 --> 00:00:34,890
+So we're going to install a virtual machine a Linux machine using sento So we're going to go into centers
+
+10
+00:00:35,330 --> 00:00:43,980
+monumental ISO which is going to show as the ISO for center is in its minimal version.
+
+11
+00:00:44,300 --> 00:00:50,100
+So OK here we are a we have we're going to click on the first link and as you can see here it's going
+
+12
+00:00:50,100 --> 00:00:54,230
+to start downloading the image I already downloaded before.
+
+13
+00:00:54,390 --> 00:00:58,190
+So I'm going to go ahead and council lead and as you can see here DS is there.
+
+14
+00:00:58,210 --> 00:00:59,170
+Resoled.
+
+15
+00:00:59,280 --> 00:01:03,920
+So after we have these eyes are already downloaded.
+
+16
+00:01:03,930 --> 00:01:09,460
+What were we going to do that we're going to create a virtual machine based on these eyes.
+
+17
+00:01:09,660 --> 00:01:12,580
+So for that I'll see you in the next lesson.

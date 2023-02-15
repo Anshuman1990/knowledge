@@ -1,0 +1,391 @@
+1
+00:00:00,330 --> 00:00:08,300
+Hello and welcome back in this video we're going to start our service our container using doctored to
+
+2
+00:00:08,330 --> 00:00:11,300
+spin up the Jenkin's service.
+
+3
+00:00:11,550 --> 00:00:18,690
+So so far we already created the doc recomposed file and we created a directory here where we're going
+
+4
+00:00:18,690 --> 00:00:20,300
+to save all the files.
+
+5
+00:00:20,340 --> 00:00:24,950
+So remember that we define a volume here and we're saying OK Doctor please.
+
+6
+00:00:24,960 --> 00:00:31,440
+Everything that is within the container in this location please save this in this folder and this folder
+
+7
+00:00:31,440 --> 00:00:33,120
+means this folder.
+
+8
+00:00:33,120 --> 00:00:39,990
+So if we take a look on the folder itself we see that we don't have any data yet and that's normal because
+
+9
+00:00:39,990 --> 00:00:41,780
+we haven't created anything.
+
+10
+00:00:41,820 --> 00:00:48,660
+So please make sure the DS folder has proper permissions so Jenkyns can write.
+
+11
+00:00:48,760 --> 00:00:51,350
+And what do I mean by a proper permissions.
+
+12
+00:00:51,360 --> 00:00:56,800
+Make sure that that user 1000 can write to these folder.
+
+13
+00:00:56,880 --> 00:00:58,560
+And what's the use at 1000.
+
+14
+00:00:58,560 --> 00:01:07,200
+So in Linux we have IDs and as you can see these user Jenkin's user has the user id of 1000.
+
+15
+00:01:07,290 --> 00:01:16,780
+So we're going to do a suit to change our 1000 call on 1000 into these folder.
+
+16
+00:01:16,820 --> 00:01:21,620
+So Jenkin's harm we're going to do it recursively.
+
+17
+00:01:21,800 --> 00:01:31,310
+So OK when you leave this you will do an L L and you are going to see that the user the Downer's Jenkyns
+
+18
+00:01:31,670 --> 00:01:33,420
+and the group is Jenkyns.
+
+19
+00:01:33,440 --> 00:01:42,410
+This is because the container uses the ID law of to write to any of you have an order ID you are going
+
+20
+00:01:42,410 --> 00:01:44,230
+to probably have a never.
+
+21
+00:01:44,390 --> 00:01:49,720
+So please make sure that you read this command before is pinning up your server.
+
+22
+00:01:50,000 --> 00:01:52,290
+So okay we're really gave it permissions.
+
+23
+00:01:52,310 --> 00:01:55,160
+We only need to do this once.
+
+24
+00:01:55,160 --> 00:01:57,720
+I mean this time in no more.
+
+25
+00:01:58,010 --> 00:02:05,970
+And once we gave permissions were going to pin up this server doing a daquiri compose app Dashti and
+
+26
+00:02:05,990 --> 00:02:11,960
+what is going to happen here is the doctor is going to create the service reading the doc recomposed
+
+27
+00:02:11,960 --> 00:02:14,690
+the Phoenician theater and if we type.
+
+28
+00:02:14,690 --> 00:02:19,830
+Dr. Pierce we're going to see this server running here.
+
+29
+00:02:20,270 --> 00:02:27,270
+So this is it daquiri container behalf as Pan up our server using Duckery.
+
+30
+00:02:27,320 --> 00:02:29,850
+You can list your containers using daquiri.
+
+31
+00:02:29,860 --> 00:02:30,640
+P.
+
+32
+00:02:30,820 --> 00:02:34,690
+So as you can see this is actually working like a charm.
+
+33
+00:02:34,700 --> 00:02:35,420
+Cool.
+
+34
+00:02:36,080 --> 00:02:44,780
+I will type doc Curlylocks dash F and this is going to show me the locks for ascertaining container.
+
+35
+00:02:44,840 --> 00:02:52,070
+Remember that in our definition of the Dockerty composed file we said that the container name is Jenkin's
+
+36
+00:02:52,070 --> 00:02:54,120
+So we do a darker loves dash.
+
+37
+00:02:54,150 --> 00:03:03,210
+And if Jenkins we hit enter and as you can see here this is what we are hash.
+
+38
+00:03:03,280 --> 00:03:04,840
+We're going to use these later.
+
+39
+00:03:05,060 --> 00:03:13,500
+So for now what we're going to do is we're going to hit the IP address of our machine.
+
+40
+00:03:13,490 --> 00:03:15,550
+Do you remember the IP address.
+
+41
+00:03:15,620 --> 00:03:22,560
+So we're going to grab this IP we can pick up here from you remember we can click here.
+
+42
+00:03:22,580 --> 00:03:25,000
+Load and then we will have the AP.
+
+43
+00:03:25,040 --> 00:03:31,790
+So we're going to copy these IP and we're going to paste it into our browser so we paste it.
+
+44
+00:03:31,820 --> 00:03:33,140
+And we're going to have an error.
+
+45
+00:03:33,290 --> 00:03:42,000
+But if we do a call on ADHD and then we hit enter it again we are going to be a press centered on the
+
+46
+00:03:42,010 --> 00:03:46,370
+screen that tells us hey I am Jane.
+
+47
+00:03:46,500 --> 00:03:53,510
+Well finally we have Jenkyns installed and Jenkins wants to make sure that we are the owners.
+
+48
+00:03:53,720 --> 00:03:57,160
+So we need to introduce your password.
+
+49
+00:03:57,410 --> 00:03:58,620
+What's the password.
+
+50
+00:03:58,700 --> 00:04:00,890
+Well the password is pretty simple.
+
+51
+00:04:00,890 --> 00:04:02,820
+You go to put me here.
+
+52
+00:04:03,140 --> 00:04:09,010
+You do a duck Curlylocks dash F and you will see the password in here.
+
+53
+00:04:09,020 --> 00:04:12,990
+So this is the password and or even a copy of this.
+
+54
+00:04:13,010 --> 00:04:19,200
+Remember to copy and put in your users do a double click on the thing you want to copy and then you
+
+55
+00:04:19,220 --> 00:04:23,670
+paste it normally here you pasted and then you click on continue.
+
+56
+00:04:23,840 --> 00:04:25,130
+Pretty simple.
+
+57
+00:04:25,160 --> 00:04:30,520
+So now as you can see here we are presented with a screen that says customized denken.
+
+58
+00:04:30,530 --> 00:04:32,290
+So what do we do here.
+
+59
+00:04:32,300 --> 00:04:37,530
+I would suggest you to click on the button that says insults are just appliance.
+
+60
+00:04:37,720 --> 00:04:40,660
+We're going to click on this and Jenkyns.
+
+61
+00:04:40,700 --> 00:04:41,880
+Where you going to see these later.
+
+62
+00:04:41,900 --> 00:04:49,940
+Jinking has a lot of plug ins and a plug in is nothing else but like a tool an extension for something.
+
+63
+00:04:50,150 --> 00:04:57,170
+So Jenkyns it's quite powerful but you can still plug in in a plug in is going to give you additional
+
+64
+00:04:57,180 --> 00:04:59,240
+functionalities for Jenkyns.
+
+65
+00:04:59,270 --> 00:05:06,950
+So in this case we're going to install the suggested plug ins by Jenkyns because for sure we're going
+
+66
+00:05:06,950 --> 00:05:09,450
+to need it in the future.
+
+67
+00:05:09,470 --> 00:05:15,680
+So this is going to take a while because it needs to connect to the Internet and then download the files
+
+68
+00:05:15,710 --> 00:05:17,960
+and install them into Jenkyns.
+
+69
+00:05:17,960 --> 00:05:24,110
+I will pause the video and now will come back when it has finished great.
+
+70
+00:05:24,150 --> 00:05:25,970
+So did download already finished.
+
+71
+00:05:26,010 --> 00:05:33,450
+And now we have a screen here that tells us to create a user and as you can see here it says OK please
+
+72
+00:05:33,450 --> 00:05:35,870
+create the first admin user.
+
+73
+00:05:36,030 --> 00:05:37,710
+So we're going to call it admin.
+
+74
+00:05:37,790 --> 00:05:39,850
+Or you can call it whatever you want.
+
+75
+00:05:39,870 --> 00:05:41,150
+We're gonna give you the password.
+
+76
+00:05:41,150 --> 00:05:43,130
+Please give us trank password.
+
+77
+00:05:43,200 --> 00:05:46,730
+I will give you the one two three four one two three four.
+
+78
+00:05:46,890 --> 00:05:49,680
+And actually if you want to do for to everything.
+
+79
+00:05:49,970 --> 00:05:50,430
+OK.
+
+80
+00:05:50,550 --> 00:05:52,390
+So we're going to give the full name.
+
+81
+00:05:52,390 --> 00:06:00,300
+Let's say that this is going to be Jenkyns at man and let's say that the male of this guy is like Jenkin's
+
+82
+00:06:01,560 --> 00:06:04,140
+at gmail dot com just to say something.
+
+83
+00:06:04,230 --> 00:06:04,870
+OK.
+
+84
+00:06:04,890 --> 00:06:07,460
+Don't click on the save and continue.
+
+85
+00:06:07,650 --> 00:06:13,520
+We click on never here and here this is going to ask for a day you are all.
+
+86
+00:06:13,680 --> 00:06:16,230
+So for now we're just going to leave it like this.
+
+87
+00:06:16,320 --> 00:06:19,650
+We click save and finish and then we are done.
+
+88
+00:06:19,650 --> 00:06:22,230
+Finally we click on start using Jenkyns.
+
+89
+00:06:22,230 --> 00:06:28,680
+And here we have the screen that allows us to lug God and lock in.
+
+90
+00:06:28,680 --> 00:06:36,030
+So if we click on Loog out here then we put the credentials that we created ad man and one two three
+
+91
+00:06:36,030 --> 00:06:42,870
+four is a puzzle where we can click on Kyp mayor saying then let's click it and then let's hit design
+
+92
+00:06:42,870 --> 00:06:43,610
+button.
+
+93
+00:06:43,740 --> 00:06:44,510
+Cool.
+
+94
+00:06:44,520 --> 00:06:51,180
+So here we are in the Jenkin's dashboard and then we're going to start having a lot of fun with all
+
+95
+00:06:51,180 --> 00:06:57,170
+of these features tools and icons that you can see here.
+
+96
+00:06:57,180 --> 00:06:58,130
+It's a dummys.
+
+97
+00:06:58,200 --> 00:06:59,300
+Any video.
+
+98
+00:06:59,500 --> 00:07:01,430
+And see you in the next lesson.

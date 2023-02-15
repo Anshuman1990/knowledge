@@ -1,0 +1,143 @@
+1
+00:00:00,240 --> 00:00:03,040
+Hello and welcome back in this Liz.
+
+2
+00:00:03,090 --> 00:00:08,790
+We're going to learn how to install Jenkyns and we're going to install Jenkin's using Duckery.
+
+3
+00:00:08,850 --> 00:00:11,260
+That's why we installed daquiri before.
+
+4
+00:00:11,580 --> 00:00:12,010
+OK.
+
+5
+00:00:12,010 --> 00:00:15,510
+So as you may know or if you don't know don't worry.
+
+6
+00:00:15,510 --> 00:00:20,120
+But Duckery uses something called an image and image is like.
+
+7
+00:00:20,370 --> 00:00:23,470
+And is nap sheared off a conflagration.
+
+8
+00:00:23,670 --> 00:00:30,780
+So in this case we're going to look for a Jenkin's image which has already all the configuration.
+
+9
+00:00:30,780 --> 00:00:36,840
+And we just need to run that image and then we will have our Jenkin's server up and running in some
+
+10
+00:00:36,960 --> 00:00:37,800
+minutes.
+
+11
+00:00:37,830 --> 00:00:45,210
+So let's head to Google dot com and let's look for Dr. Jenkins image.
+
+12
+00:00:45,270 --> 00:00:54,390
+We hit enter and then we're going to go to our first resort and as you can see here we have these Jenkin's
+
+13
+00:00:54,810 --> 00:00:57,500
+which is the official in March for a doctor.
+
+14
+00:00:57,570 --> 00:01:03,420
+So we're going to copy this command and this command is going to download the image.
+
+15
+00:01:03,480 --> 00:01:12,430
+So we go here and what we're going to do is we're going to pay this command and we hit enter OK.
+
+16
+00:01:12,460 --> 00:01:15,990
+As you can see the image is already downloading.
+
+17
+00:01:16,030 --> 00:01:22,130
+We only need to wait until the process completes and we are almost done.
+
+18
+00:01:22,150 --> 00:01:29,530
+This is the magic of Doctor doctor allows you to create services quite easy with images.
+
+19
+00:01:29,670 --> 00:01:37,200
+So you only need to have one image and then you're going to be able to pick up one service pretty fast
+
+20
+00:01:37,540 --> 00:01:38,990
+and that's cool.
+
+21
+00:01:39,090 --> 00:01:44,760
+You just need to create an image or look for an existing name and run that image and then you have your
+
+22
+00:01:44,840 --> 00:01:46,470
+servers up and running.
+
+23
+00:01:46,530 --> 00:01:50,620
+Don't worry if you don't know Dharker we are going to learn here.
+
+24
+00:01:50,950 --> 00:01:57,170
+So OK you already downloaded this image but where is this much located.
+
+25
+00:01:57,270 --> 00:02:03,660
+Well if you type darker images then you are going to see your image here which is pretty good.
+
+26
+00:02:03,720 --> 00:02:06,340
+It's a little bit heavy but don't worry.
+
+27
+00:02:06,700 --> 00:02:14,070
+OK so we have if you must know if you type jocker info and you grab for rude you are going to know we're
+
+28
+00:02:14,070 --> 00:02:16,530
+Dharker is saving the files.
+
+29
+00:02:16,680 --> 00:02:18,140
+So this is the location.
+
+30
+00:02:18,150 --> 00:02:27,260
+If you do something like sudo do dash is age and then you give the path you're going to know how much
+
+31
+00:02:27,260 --> 00:02:36,420
+this pays is that Kurt taken in this case they taking this size because we downloaded this image.
+
+32
+00:02:36,810 --> 00:02:37,710
+Ok cool.
+
+33
+00:02:37,740 --> 00:02:40,830
+So we already downloaded the Jenkin's image.
+
+34
+00:02:40,830 --> 00:02:42,850
+Now it's time to run it.
+
+35
+00:02:42,870 --> 00:02:43,740
+So for that.
+
+36
+00:02:43,740 --> 00:02:45,480
+See you in the next lesson.

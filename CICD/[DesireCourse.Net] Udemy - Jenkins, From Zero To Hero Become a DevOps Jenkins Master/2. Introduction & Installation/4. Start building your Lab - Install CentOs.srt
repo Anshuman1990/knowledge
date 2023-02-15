@@ -1,0 +1,339 @@
+1
+00:00:00,250 --> 00:00:05,000
+Kilo and welcome back OK here we already download are image.
+
+2
+00:00:05,250 --> 00:00:07,850
+Please be sure that it image that you download.
+
+3
+00:00:07,860 --> 00:00:15,860
+It's going to be sent to seven as you can see here and there it is a 64 version as you can see here.
+
+4
+00:00:15,860 --> 00:00:21,060
+So OK once we have these image what we're going to do is we're going to create a virtual machine using
+
+5
+00:00:21,060 --> 00:00:22,970
+this image and a virtual box.
+
+6
+00:00:22,980 --> 00:00:25,380
+So let's go ahead and open up a little box.
+
+7
+00:00:25,380 --> 00:00:26,880
+We're going to click on new.
+
+8
+00:00:27,090 --> 00:00:31,820
+Then we're going to give it a name like Jenkin's or you can name it as you want.
+
+9
+00:00:31,830 --> 00:00:34,190
+We're going to say that the machine is Linux.
+
+10
+00:00:34,220 --> 00:00:35,940
+I think we don't have Santo's here.
+
+11
+00:00:36,000 --> 00:00:36,750
+We don't have.
+
+12
+00:00:36,810 --> 00:00:41,690
+So we're going to use Redhat as I told you it should be 64 bit.
+
+13
+00:00:41,730 --> 00:00:43,150
+So we're going to do.
+
+14
+00:00:43,260 --> 00:00:44,440
+We're going to click next.
+
+15
+00:00:44,470 --> 00:00:51,150
+We're going to give it for now I think two gigabytes for a ram so we're going to click next.
+
+16
+00:00:51,210 --> 00:00:54,600
+We're going to create a hard disk now because we don't have any hard disk.
+
+17
+00:00:54,600 --> 00:00:55,970
+We're going to click and create.
+
+18
+00:00:56,060 --> 00:01:00,260
+We're going to click on next here next and we're going to give it.
+
+19
+00:01:00,300 --> 00:01:04,180
+I don't know let's give it like 20 to get bytes.
+
+20
+00:01:04,560 --> 00:01:08,150
+OK so let's we can create an OK.
+
+21
+00:01:08,190 --> 00:01:10,770
+We have already our machine created.
+
+22
+00:01:10,770 --> 00:01:12,840
+So let's go ahead to settings.
+
+23
+00:01:13,420 --> 00:01:16,690
+And let's go to network ones we are here.
+
+24
+00:01:16,810 --> 00:01:23,470
+We need to define which adapter we are going to use so we can use as you can see here a lot of adapters
+
+25
+00:01:23,470 --> 00:01:24,440
+for discourse.
+
+26
+00:01:24,460 --> 00:01:30,700
+We're going to be using the bridge adapter so we have a Indie's rubdown as you can see here a lot of
+
+27
+00:01:30,700 --> 00:01:39,250
+adapter's via's And these are virtual adapters so we don't want these ones we could want these or this.
+
+28
+00:01:39,280 --> 00:01:44,210
+The first one which is Ethernet or the last one which is wireless depends on you.
+
+29
+00:01:44,470 --> 00:01:50,320
+So for example in the course of using the Ethar and connections which means that my computer is always
+
+30
+00:01:50,320 --> 00:01:58,300
+going to be connected to the network using a court or a wire it means that the connection is going to
+
+31
+00:01:58,300 --> 00:02:05,320
+be always the ethernet connection or if you know that your computer is always using Wi-Fi then you should
+
+32
+00:02:05,320 --> 00:02:09,220
+bind your virtual machine to wireless.
+
+33
+00:02:09,220 --> 00:02:10,570
+It depends on you.
+
+34
+00:02:10,660 --> 00:02:16,240
+Please make sure that the connection that you specify here is always active whenever you turn on your
+
+35
+00:02:16,240 --> 00:02:17,190
+virtual machine.
+
+36
+00:02:17,350 --> 00:02:23,140
+So for now as you can see here I will be choosing an ethernet connection and then clicking OK.
+
+37
+00:02:23,590 --> 00:02:26,030
+And then we're going to click on unstored.
+
+38
+00:02:26,260 --> 00:02:32,980
+So after we click on it our machine is going to boot up it's going to start and we will need to select
+
+39
+00:02:32,980 --> 00:02:34,320
+a startup disk.
+
+40
+00:02:34,480 --> 00:02:40,690
+So as you may guess we're going to use the ISO that we downloaded previously or are you going to go
+
+41
+00:02:40,690 --> 00:02:43,400
+into downloads and we're going to look for it centers.
+
+42
+00:02:43,410 --> 00:02:49,720
+This is the one that we downloaded with click on start then OK it's powering up.
+
+43
+00:02:49,720 --> 00:02:57,730
+As I told you before if your if you are not using Windows then you can just skip these videos and use
+
+44
+00:02:57,730 --> 00:02:59,730
+your Linux desktop.
+
+45
+00:02:59,740 --> 00:03:03,110
+But if you have Windows then you should keep with these ideas.
+
+46
+00:03:03,300 --> 00:03:03,870
+OK.
+
+47
+00:03:03,940 --> 00:03:10,190
+So what we're going to do here is that we're going to use the rules of the keyword to select installs
+
+48
+00:03:10,250 --> 00:03:14,930
+and those ones we're here Anner and we we.
+
+49
+00:03:15,670 --> 00:03:19,310
+So let's wait until something appears on the screen.
+
+50
+00:03:20,530 --> 00:03:29,530
+Cool as you can see here you have the welcome page and you have in these left side hand.
+
+51
+00:03:29,590 --> 00:03:36,340
+You have the language so we're going to use English for these keywords and here let's just click and
+
+52
+00:03:36,340 --> 00:03:39,370
+continue so this is cool.
+
+53
+00:03:39,370 --> 00:03:45,070
+Once you click on continue then we're going to have these ice cream here where we need to configure
+
+54
+00:03:45,070 --> 00:03:46,190
+a couple of things.
+
+55
+00:03:46,330 --> 00:03:48,660
+As you can see here on this software it's selection.
+
+56
+00:03:48,670 --> 00:03:55,640
+This is a specified as a minimal installation cool that we go into the installation.
+
+57
+00:03:55,650 --> 00:04:02,800
+What I click on here and we're going to use the automatically partition because it's OK just for testing.
+
+58
+00:04:02,800 --> 00:04:09,130
+So we're going to click on Don and then we're going to go into the network and we're going to see the
+
+59
+00:04:09,130 --> 00:04:15,160
+Ethernet the aperture that we created before and we're going to just turn these on as you can see it
+
+60
+00:04:15,190 --> 00:04:22,150
+actually retrieves an IP enth and we're gonna use this IP address in the future.
+
+61
+00:04:22,210 --> 00:04:24,980
+So for now we're done with this list click done.
+
+62
+00:04:25,270 --> 00:04:31,780
+And finally after we have configure everything that is needed we're going to hit the begin installation
+
+63
+00:04:31,780 --> 00:04:32,430
+button.
+
+64
+00:04:32,500 --> 00:04:36,610
+So we hit this and then we're going to create a password.
+
+65
+00:04:36,670 --> 00:04:42,290
+So for now I'm just going to say one two three four one two three four.
+
+66
+00:04:42,340 --> 00:04:42,860
+OK.
+
+67
+00:04:42,870 --> 00:04:46,450
+And we're going to click on done twice.
+
+68
+00:04:46,870 --> 00:04:47,370
+OK.
+
+69
+00:04:47,390 --> 00:04:52,510
+Now I don't know if we need to create a user let's create a user Let's say I want to create a user which
+
+70
+00:04:52,510 --> 00:04:59,610
+is going to call Jenkin's McHale and Jenkins and we're going to make these user.
+
+71
+00:04:59,610 --> 00:05:05,790
+And that means Strader because we want these user to be able of using sudo.
+
+72
+00:05:05,970 --> 00:05:10,100
+So we mark this and then we're going to give you the password.
+
+73
+00:05:10,150 --> 00:05:16,740
+We're you going to say one two three four again one two three four and then we're gonna click on Don.
+
+74
+00:05:17,040 --> 00:05:25,180
+So now the only one thing that we need to do is just to wait until this installation gets completed.
+
+75
+00:05:25,320 --> 00:05:28,580
+And after that we will have our machine ready.
+
+76
+00:05:28,590 --> 00:05:33,100
+So we kind of start playing around with Jenkin's that are Amazon and more.
+
+77
+00:05:33,480 --> 00:05:36,500
+So let's wait until these installation finishes.
+
+78
+00:05:36,530 --> 00:05:43,360
+I will puzzle you and I will come back once it has finished cool.
+
+79
+00:05:43,360 --> 00:05:44,920
+So these are already finished.
+
+80
+00:05:44,920 --> 00:05:51,370
+So the only one thing that is left is that not when you click this reboot button and then our machine
+
+81
+00:05:51,370 --> 00:05:52,870
+is going to rebuild.
+
+82
+00:05:52,870 --> 00:05:53,780
+So let's get it.
+
+83
+00:05:53,850 --> 00:06:00,730
+Let's click on Rivard and then we need to wait until the machine boots up and then we're going to be
+
+84
+00:06:00,730 --> 00:06:03,970
+ready to start playing around with Jenkyns.
+
+85
+00:06:03,970 --> 00:06:05,870
+See you in the next lesson.

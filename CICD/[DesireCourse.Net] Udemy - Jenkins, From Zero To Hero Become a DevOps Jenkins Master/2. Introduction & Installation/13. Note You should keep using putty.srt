@@ -1,0 +1,115 @@
+1
+00:00:00,480 --> 00:00:02,370
+Hello and welcome back.
+
+2
+00:00:02,430 --> 00:00:10,860
+OK guys this is a pretty quick video and I'm doing this because I've taken a look at DVD-R's and I have
+
+3
+00:00:10,860 --> 00:00:15,160
+seen that when we were using puti for you could be ok.
+
+4
+00:00:15,180 --> 00:00:20,070
+Bad in this case the video doesn't look good or it doesn't look pretty clear.
+
+5
+00:00:20,070 --> 00:00:27,090
+So what I'm going to do here is that I have already installed Ubuntu which is a subsystem for Windows.
+
+6
+00:00:27,090 --> 00:00:33,570
+If you're using Windows and you can just go ahead and install it and from now on I won't be using puti
+
+7
+00:00:33,580 --> 00:00:34,370
+anymore.
+
+8
+00:00:34,500 --> 00:00:37,170
+Instead I'll be using is H.
+
+9
+00:00:37,230 --> 00:00:38,650
+Jenkins.
+
+10
+00:00:38,700 --> 00:00:39,950
+Jenkins that low cut.
+
+11
+00:00:39,950 --> 00:00:46,680
+Remember that we created that DNS before he'd enter and I'll just give the puzzle one two three four.
+
+12
+00:00:47,100 --> 00:00:51,710
+And as you can see here DS actually works the same way that puti does.
+
+13
+00:00:51,720 --> 00:00:57,420
+But the thing is that here the script looks quite better and the definition is better.
+
+14
+00:00:57,450 --> 00:00:59,130
+Kids at UNO in Pudi.
+
+15
+00:00:59,130 --> 00:01:02,750
+The colors are not good for recording videos.
+
+16
+00:01:02,790 --> 00:01:08,060
+So probably as you can see the difference this is why it is actually stronger.
+
+17
+00:01:08,070 --> 00:01:14,500
+And there's one therefore I know that you're going to like to watch this instead of watching two deputy.
+
+18
+00:01:14,520 --> 00:01:21,810
+You can use one to install it in the Microsoft story if you want or you can keep using Pootie.
+
+19
+00:01:21,810 --> 00:01:27,210
+I suggest you to keep using Pootie because that's cool you are going to use it in the future or maybe
+
+20
+00:01:27,210 --> 00:01:31,520
+a job or whatever and it's cool that you know how to use boody.
+
+21
+00:01:31,530 --> 00:01:34,420
+But if you want to go ahead and use Xubuntu it's OK.
+
+22
+00:01:34,470 --> 00:01:40,350
+It's exactly the same thing we're doing and as a stage connection and that's what really mattered.
+
+23
+00:01:40,500 --> 00:01:47,340
+So in here as you can see I'm connected to the Jenkin's machine that we created which is actually using
+
+24
+00:01:47,340 --> 00:01:49,270
+this IP address.
+
+25
+00:01:49,800 --> 00:01:53,500
+And this is the virtual machine that we created before.
+
+26
+00:01:53,580 --> 00:01:59,940
+So this is exactly the same machine that Elvie using this because you know it's actually better for
+
+27
+00:01:59,940 --> 00:02:03,320
+you to see the screen for the resolution of the videos.
+
+28
+00:02:03,540 --> 00:02:09,480
+So when I drew on L-L you see things clearer than what you would use in Pootie.
+
+29
+00:02:09,480 --> 00:02:16,000
+So this is just for you to feel comfortable with the videos and I'll see you in the next lesson.
